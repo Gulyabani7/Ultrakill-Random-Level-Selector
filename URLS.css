@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "VCR OSD MONO";
+    src: url("VCROSDMONO.ttf")
+}
+
+input {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.LevelLabel, .Levels, .LabelAndCheck{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 3px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+
+.LevelList {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin: 3px;
+    justify-content: center;
+}
+
+.LabelAndCheck {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(132, 129, 129,0.7);
+    text-wrap-mode: wrap;
+}
+
+.LabelAndCheck > label {
+    text-wrap-mode: wrap;
+}
+
+.LevelImages {
+    border-radius: 8px;
+}
+
+
+#MainThingy {
+    font-family: "VCR OSD MONO";
+    margin: 5px 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 2px solid black;
+    height: auto;
+    background-color: rgb(121, 121, 121,0.7);
+    padding: 5px;
+    gap:40px;
+}
+
+#LeftDiv, #RightDiv{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+#SelectedLevelShowDiv {
+    background-color: rgba(183, 95, 109,0.7);
+    border: none;
+    border-radius: 8px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.MainLabel , .ACTNAMES {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.LevelLabel {
+    max-width:max-content;
+}
+
+body {
+    background: #DE2A45;
+    background: linear-gradient(180deg, rgba(222, 42, 69, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(222, 42, 69, 1) 100%);
+    overflow-x: hidden;
+    font-size: 1.5em;
+}
+
+
+#ACT1 , #ACT2 , #ACT3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.LayerDiv {
+    border-radius: 8px;
+}
+
+.NewCheckbox {
+    display: block;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 4px;
+    border: 1px solid white;
+    margin: auto;
+}
+#Prelude {
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label > span{
+    background-image: url("Fotoğraflar/CheckboxSelected.webp");
+}
+
+.OpenBoxes , .Layers{
+    position: absolute;
+}
+
+#SelectedLevel {
+    border-radius: 8px;
+    margin: 10px;
+}

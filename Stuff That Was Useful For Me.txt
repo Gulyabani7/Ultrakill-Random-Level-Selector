@@ -1,0 +1,208 @@
+
+<input type="checkbox" id="" name="" value="" class="Layers" autocomplete="off">
+<label for="Limbo">Limbo</label>
+<input type="checkbox" id="ABC-1" name="" value="ABC-1" class="Levels BLevel" autocomplete="off">
+<label for="ABC-1"></label>
+<input type="checkbox" id="ABC-2" name="" value="ABC-2" class="Levels BLevel" autocomplete="off">
+<label for="ABC-2"></label>
+<input type="checkbox" id="ABC-3" name="" value="ABC-3" class="Levels BLevel" autocomplete="off">
+<label for="ABC-3"></label>
+<input type="checkbox" id="ABC-4" name="" value="ABC-4" class="Levels BLevel" autocomplete="off">
+<label for="ABC-4"></label>
+<input type="checkbox" id="ABC-S" name="" value="ABC-S" class="Levels BLevel" autocomplete="off">
+<label for="ABC-S"></label>
+
+KLPLevels = document.getElementsByClassName("KLPLevel");
+KLPLayer = document.getElementById("KLP");
+KLPLayer.addEventListener("click", (event) => {
+    if (KLPLayer.checked === true){
+        for (let i of KLPLevels) {
+        let a =SelectedLevels.indexOf(i.value);
+        if (a !== -1) {
+            SelectedLevels.splice(SelectedLevels.indexOf(a.value), 1);
+        }
+        }    
+        for (let i of KLPLevels) {
+        i.checked = true;
+        SelectedLevels.push(i.value);
+        }
+    }
+    else{
+        for (let i of KLPLevels) {
+        i.checked = false;
+        SelectedLevels.splice(SelectedLevels.indexOf(i.value))
+        }
+    }
+    console.log(SelectedLevels)
+})
+
+let LayerABCOption1 = document.getElementById("ABC-1");
+LayerABCOption1.addEventListener("click", (event) => {
+    if (LayerABCOption1.checked === true)
+        SelectedLevels.push(LayerABCOption1.value)
+    else
+        SelectedLevels.splice(SelectedLevels.indexOf(LayerABCOption1.value))
+    console.log(SelectedLevels)
+})
+let LayerABCOption2 = document.getElementById("ABC-2");
+LayerABCOption2.addEventListener("click", (event) => {
+    if (LayerABCOption2.checked === true)
+        SelectedLevels.push(LayerABCOption2.value)
+    else
+        SelectedLevels.splice(SelectedLevels.indexOf(LayerABCOption2.value))
+    console.log(SelectedLevels)
+})
+let LayerABCOption3 = document.getElementById("ABC-3");
+LayerABCOption3.addEventListener("click", (event) => {
+    if (LayerABCOption3.checked === true)
+        SelectedLevels.push(LayerABCOption3.value)
+    else
+        SelectedLevels.splice(SelectedLevels.indexOf(LayerABCOption3.value))
+    console.log(SelectedLevels)
+})
+
+let LayerABCOption4 = document.getElementById("ABC-4");
+LayerABCOption4.addEventListener("click", (event) => {
+    if (LayerABCOption4.checked === true)
+        SelectedLevels.push(LayerABCOption4.value)
+    else
+        SelectedLevels.splice(SelectedLevels.indexOf(LayerABCOption4.value))
+    console.log(SelectedLevels)
+})
+
+let LayerABCOptionS = document.getElementById("ABC-S");
+LayerABCOptionS.addEventListener("click", (event) => {
+    if (LayerABCOptionS.checked === true)
+        SelectedLevels.push(LayerABCOptionS.value)
+    else
+        SelectedLevels.splice(SelectedLevels.indexOf(LayerABCOptionS.value))
+    console.log(SelectedLevels)
+})
+
+<input type="checkbox" id="KAKOpen" class="OpenBoxes"></input>
+<label for="KAKOpen" id="KAKOpenLabel">></label>
+
+class="KAKLabel LevelLabel"
+
+document.getElementById("KAKOpen").addEventListener("click", (event) => {
+    if (document.getElementById("KAKOpen").checked === true){
+        for (let i of document.getElementsByClassName("KAKLabel")) {
+        i.style.visibility = "visible"
+    }
+    for (let i of document.getElementsByClassName("KAKLevel")) {
+        i.style.visibility = "visible"
+    }
+    document.getElementById("KAKOpenLabel").textContent = "<"
+    }
+    else {
+        for (let i of document.getElementsByClassName("KAKLabel")) {
+        i.style.visibility = "hidden"
+    }
+    for (let i of document.getElementsByClassName("KAKLevel")) {
+        i.style.visibility = "hidden"
+    }
+    document.getElementById("KAKOpenLabel").textContent = ">"
+    }
+})
+
+<div class="LabelAndCheck LabelAndCheckAKK">
+<label for="-"><img src="Fotoğraflar/" class="AKKimg"></label>
+AKKLayer.checked = false;
+
+document.getElementById("AKKOpen").addEventListener("click", (event) => {
+    if (document.getElementById("AKKOpen").checked === true){
+        for (let i of document.getElementsByClassName("AKKLabel")) {
+        i.style.visibility = "visible"
+        i.style.width = "auto";
+        i.style.height = "auto";
+    };
+    for (let i of document.getElementsByClassName("AKKLevel")) {
+        i.style.visibility = "visible"
+        i.style.width = "auto";
+        i.style.height = "auto";
+    };
+    for (let i of document.getElementsByClassName("LabelAndCheckAKK")) {
+        i.style.visibility = "visible"
+        i.style.width = "auto";
+        i.style.height = "auto";
+    };
+    for (let i of document.getElementsByClassName("AKKimg")){
+        console.log(i)
+        i.style.visiblity = "visible";
+        i.style.width = "100px";
+        i.style.height = "100px";
+    }
+    document.getElementById("AKKOpenLabel").textContent = "<";
+    }
+    else {
+        for (let i of document.getElementsByClassName("AKKLabel")) {
+        i.style.visibility = "hidden"
+        i.style.width = "0";
+        i.style.height = "0";
+    }
+    for (let i of document.getElementsByClassName("AKKLevel")) {
+        i.style.visibility = "hidden"
+        i.style.width = "0";
+        i.style.height = "0";
+    }
+    for (let i of document.getElementsByClassName("LabelAndCheckAKK")) {
+        i.style.visibility = "hidden"
+        i.style.width = "0";
+        i.style.height = "0";
+    }
+    document.getElementById("AKKOpenLabel").textContent = ">"
+    }
+})
+
+EncoreLevels = document.getElementsByClassName("EncoreLevel");
+EncoreLayer = document.getElementById("Encore");
+EncoreLayer.addEventListener("click", (event) => {
+    if (EncoreLayer.checked === true){
+        for (let i of EncoreLevels) {
+        let a =SelectedLevels.indexOf(i.value);
+        if (a !== -1) {
+            SelectedLevels.splice(a, 1);
+        }
+        }    
+        for (let i of EncoreLevels) {
+        i.checked = true;
+        SelectedLevels.push(i.value);
+        }
+    }
+    else{
+        for (let i of EncoreLevels) {
+        i.checked = false;
+        SelectedLevels.splice(SelectedLevels.indexOf(i.value),1)
+        }
+    }
+    console.log(SelectedLevels)
+})
+
+let LayerEOption1 = document.getElementById("E-1");
+LayerEOption1.addEventListener("click", (event) => {
+    if (LayerEOption1.checked === true)
+        SelectedLevels.push(LayerEOption1.value)
+    else
+        SelectedLevels.splice(SelectedLevels.indexOf(LayerEOption1.value),1)
+        EncoreLayer.checked = false;
+    console.log(SelectedLevels)
+})
+let LayerEOption2 = document.getElementById("E-2");
+LayerEOption2.addEventListener("click", (event) => {
+    if (LayerEOption2.checked === true)
+        SelectedLevels.push(LayerEOption2.value)
+    else
+        SelectedLevels.splice(SelectedLevels.indexOf(LayerEOption2.value),1)
+        EncoreLayer.checked = false;
+    console.log(SelectedLevels)
+})
+
+
+<!--
+Source - https://stackoverflow.com/a/57373674
+Posted by Quentin, modified by community. See post 'Timeline' for change history
+Retrieved 2026-06-14, License - CC BY-SA 4.0
+-->
+
+←↑→↓
+↓↑
