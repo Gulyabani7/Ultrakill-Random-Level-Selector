@@ -1,4 +1,6 @@
-let Result = document.getElementById("Result");
+let ClickSound = document.createElement("audio");
+ClickSound.src = "Sesler/Click Sound Effect.mp3";
+let GenerateFail = document.createElement("audio");
 let SelectedLevels = []
 //Prelude
 PreludeLevels = document.getElementsByClassName("PreludeLevel");
@@ -1204,12 +1206,23 @@ document.getElementById("EncoreOpen").addEventListener("click", (event) => {
 let Button = document.getElementById("GenerateButton");
 Button.addEventListener("click", (event) => {
     let Result= (SelectedLevels[Math.floor(Math.random() * SelectedLevels.length)]);
-    console.log(Result)
-    let A = document.querySelector(`label[for="${Result}"] img`)
-    let B = A.getAttribute("src")
-    let SelectedLevel = document.getElementById("SelectedLevel");
-    console.log(SelectedLevel)
-    SelectedLevel.setAttribute("src",B)
-    document.getElementById("SelectedLevelShowDiv").style.visibility = "visible";
-    document.getElementById("TipOfTheDay").textContent = "Tip of the day:\n" + A.getAttribute("alt")
+    if (Result !== undefined) {
+        if (document.getElementById("Fail").textContent === "Please select a level :P"){
+            document.getElementById("Fail").textContent = "Thank you :3";
+        }
+        else {
+            document.getElementById("Fail").textContent = "";
+        }
+        let SelectedLabelsImg = document.querySelector(`label[for="${Result}"] img`)
+        let SelectedImage = SelectedLabelsImg.getAttribute("src")
+        let SelectedLevel = document.getElementById("SelectedLevel");
+        console.log(SelectedLevel)
+        SelectedLevel.setAttribute("src",SelectedImage)
+        document.getElementById("SelectedLevelShowDiv").style.visibility = "visible";
+        document.getElementById("TipOfTheDay").textContent = "Tip of the day:\n" + SelectedLabelsImg.getAttribute("alt")
+    }
+    else {
+        document.getElementById("Fail").textContent = "Please select a level :P"
+        document.getElementById("SelectedLevelShowDiv").style.visibility = "hidden";
+    }
 })
