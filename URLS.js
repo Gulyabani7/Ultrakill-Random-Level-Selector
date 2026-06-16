@@ -1,6 +1,4 @@
-let ClickSound = document.createElement("audio");
-ClickSound.src = "Sesler/Click Sound Effect.mp3";
-let GenerateFail = document.createElement("audio");
+
 let SelectedLevels = []
 //Prelude
 PreludeLevels = document.getElementsByClassName("PreludeLevel");
