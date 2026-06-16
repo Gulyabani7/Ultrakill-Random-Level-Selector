@@ -22,7 +22,6 @@ input[type="checkbox"] {
     visibility: hidden;
 }
 
-
 .LevelList {
     display: flex;
     flex-wrap: wrap;
@@ -70,6 +69,8 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
+    align-items: center;
+    gap: 10px;
 }
 
 #SelectedLevelShowDiv {
@@ -80,6 +81,8 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .MainLabel , .ACTNAMES {
@@ -97,6 +100,7 @@ body {
     background: linear-gradient(180deg, rgba(222, 42, 69, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(222, 42, 69, 1) 100%);
     overflow-x: hidden;
     font-size: 1.5em;
+    font-family: "VCR OSD MONO";
 }
 
 
@@ -139,4 +143,37 @@ input[type="checkbox"]:checked + label > span{
 #SelectedLevel {
     border-radius: 8px;
     margin: 10px;
+    max-width: 250px;
+}
+
+#GenerateButton  {
+    font-family: "VCR OSD MONO";
+    border: none;
+    background-image: url("Fotoğraflar/GenerateButton.webp");
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    transition: 0.4s ease;
+}
+
+#GenerateButton:hover {
+    color: rgb(232, 79, 79);
+}
+
+h1 {
+    font-size: 3.7em;
+    text-align: center;
+}
+
+#Fail {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #MainThingy {flex-direction: column;}
+    h1 {font-size: 2em;}
+    h1 img {
+        width: 200px;
+    }
 }
