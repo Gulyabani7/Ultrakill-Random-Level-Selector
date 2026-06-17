@@ -37,7 +37,8 @@ input[type="checkbox"] {
     max-width: fit-content;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(132, 129, 129,0.7);
+    background-color: rgb(0, 0, 0,0.7);
+    border: 2px solid white;
     text-wrap-mode: wrap;
 }
 
@@ -52,17 +53,21 @@ input[type="checkbox"] {
 
 #MainThingy {
     font-family: "VCR OSD MONO";
-    margin: 5px 5px 10px 5px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border-radius: 8px;
-    border: 2px solid black;
+    border: 2px solid white;
     height: auto;
-    background-color: rgb(121, 121, 121,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 5px;
-    gap:40px;
+    margin: 10px;
+}
+
+#ActualMainThingy {
+    z-index: 1;
 }
 
 #LeftDiv, #RightDiv{
@@ -74,8 +79,8 @@ input[type="checkbox"] {
 }
 
 #SelectedLevelShowDiv {
-    background-color: rgba(183, 95, 109,0.7);
-    border: none;
+    background-color: rgba(0, 0, 0,0.7);
+    border: 2px solid white;
     border-radius: 8px;
     visibility: hidden;
     display: flex;
@@ -92,7 +97,7 @@ input[type="checkbox"] {
 }
 
 .LevelLabel {
-    max-width:max-content;
+    max-width:fit-content;
 }
 
 body {
@@ -101,6 +106,8 @@ body {
     overflow-x: hidden;
     font-size: 1.5em;
     font-family: "VCR OSD MONO";
+    margin: 0;
+    color: white;
 }
 
 
@@ -128,9 +135,7 @@ body {
     border: 1px solid white;
     margin: auto;
 }
-#Prelude {
-    visibility: hidden;
-}
+
 
 input[type="checkbox"]:checked + label > span{
     background-image: url("Fotoğraflar/CheckboxSelected.webp");
@@ -141,9 +146,10 @@ input[type="checkbox"]:checked + label > span{
 }
 
 #SelectedLevel {
+    border: 2px solid white;
     border-radius: 8px;
     margin: 10px;
-    max-width: 250px;
+    max-width:250px;
 }
 
 #GenerateButton  {
@@ -170,10 +176,87 @@ h1 {
     text-align: center;
 }
 
+#SettingsDiv {
+    position:absolute;
+    right: 30px;
+    margin-top: 10px;
+    transition: 0.4s ease;
+}
+
+#SettingsDiv:hover {
+    cursor: pointer;
+}
+
+#SettingsPage {
+    display: flex;
+    justify-content: space-between ;
+    background-color: black;
+    visibility: hidden;
+    position: fixed;
+    z-index: 3;
+    inset: 0;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    max-width: 50%;
+    max-height: 60%;
+    padding: 10px;
+    gap: 5px;
+}
+
+#SettingsPage span{
+    margin-top: 2px;
+}
+
+#SettingsPage div {
+    border: 2px solid white;
+    flex-grow: 1;
+}
+
+#SettingsPage h2 {
+    text-align: center;
+}
+
+#Overlay {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: gray;
+    opacity: 0.9;
+    position: fixed;
+    visibility: hidden;
+}
+
+hr {
+    border: 2px solid white;
+}
+
 @media (max-width: 600px) {
     #MainThingy {flex-direction: column;}
-    h1 {font-size: 2em;}
-    h1 img {
-        width: 200px;
+    h1 {
+        font-size: 1.5em;
     }
+    h1 img {
+        width: 150px;
+    }
+    img {
+    max-width: 150px;
+    }
+    html,body {
+        overflow-x: hidden;
+    }
+    #SettingsPage {
+        max-width: 90%;
+        max-height: 45%;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
+
+#Settings {
+    display: flex;
 }
