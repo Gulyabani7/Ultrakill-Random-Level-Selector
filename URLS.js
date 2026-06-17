@@ -1,5 +1,6 @@
-
 let SelectedLevels = []
+let Music = document.getElementById("MusicSound");
+Music.volume = 0.7;
 //Prelude
 PreludeLevels = document.getElementsByClassName("PreludeLevel");
 PreludeLayer = document.getElementById("Prelude");
@@ -108,7 +109,7 @@ document.getElementById("PreludeOpen").addEventListener("click", (event) => {
         i.style.height = "auto";
         };
     document.getElementById("PreludeOpenLabel").textContent = "↑";
-    document.getElementById("PreludeDiv").style.background = "rgba(224, 115, 20,0.7)"
+    document.getElementById("PreludeDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("PreludeLabel")) {
@@ -127,7 +128,7 @@ document.getElementById("PreludeOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("PreludeOpenLabel").textContent = "↓"
-    document.getElementById("PreludeDiv").style.background = "none"
+    document.getElementById("PreludeDiv").style.border = "none"
     }
 })
 
@@ -227,7 +228,7 @@ document.getElementById("LimboOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("LimboOpenLabel").textContent = "↑";
-    document.getElementById("LimboDiv").style.background = "rgba(12, 251, 120,0.7)";
+    document.getElementById("LimboDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("LimboLabel")) {
@@ -246,7 +247,7 @@ document.getElementById("LimboOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("LimboOpenLabel").textContent = "↓"
-    document.getElementById("LimboDiv").style.background = "none";
+    document.getElementById("LimboDiv").style.border = "none";
     }
 })
 
@@ -347,7 +348,7 @@ document.getElementById("LustOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("LustOpenLabel").textContent = "↑";
-    document.getElementById("LustDiv").style.background = "rgba(163, 32, 239,0.7)";
+    document.getElementById("LustDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("LustLabel")) {
@@ -366,7 +367,7 @@ document.getElementById("LustOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("LustOpenLabel").textContent = "↓";
-    document.getElementById("LustDiv").style.background = "none";
+    document.getElementById("LustDiv").style.border = "none";
     }
 })
 
@@ -438,7 +439,7 @@ document.getElementById("GluttonyOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("GluttonyOpenLabel").textContent = "↑";
-    document.getElementById("GluttonyDiv").style.background = "rgba(243, 191, 59,0.7)";
+    document.getElementById("GluttonyDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("GluttonyLabel")) {
@@ -457,7 +458,7 @@ document.getElementById("GluttonyOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("GluttonyOpenLabel").textContent = "↓"
-    document.getElementById("GluttonyDiv").style.background = "none";
+    document.getElementById("GluttonyDiv").style.border = "none";
     }
 })
 
@@ -557,7 +558,7 @@ document.getElementById("GreedOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("GreedOpenLabel").textContent = "↑";
-    document.getElementById("GreedDiv").style.background = "rgba(255, 247, 0, 0.7)";
+    document.getElementById("GreedDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("GreedLabel")) {
@@ -576,7 +577,7 @@ document.getElementById("GreedOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("GreedOpenLabel").textContent = "↓"
-    document.getElementById("GreedDiv").style.background = "none";
+    document.getElementById("GreedDiv").style.border = "none";
     }
 })
 
@@ -676,7 +677,7 @@ document.getElementById("WrathOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("WrathOpenLabel").textContent = "↑";
-    document.getElementById("WrathDiv").style.background = "rgba(43, 102, 142, 0.7)";
+    document.getElementById("WrathDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("WrathLabel")) {
@@ -695,7 +696,7 @@ document.getElementById("WrathOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("WrathOpenLabel").textContent = "↓"
-    document.getElementById("WrathDiv").style.background = "none";
+    document.getElementById("WrathDiv").style.border = "none";
     }
 })
 
@@ -766,7 +767,7 @@ document.getElementById("HeresyOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("HeresyOpenLabel").textContent = "↑";
-    document.getElementById("HeresyDiv").style.background = "rgba(255, 34, 0, 0.7)"
+    document.getElementById("HeresyDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("HeresyLabel")) {
@@ -785,7 +786,7 @@ document.getElementById("HeresyOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("HeresyOpenLabel").textContent = "↓"
-    document.getElementById("HeresyDiv").style.background = "none";
+    document.getElementById("HeresyDiv").style.border = "none";
     }
 })
 
@@ -885,7 +886,7 @@ document.getElementById("ViolenceOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("ViolenceOpenLabel").textContent = "↑";
-    document.getElementById("ViolenceDiv").style.background = "rgba(243, 227, 217, 0.7)"
+    document.getElementById("ViolenceDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("ViolenceLabel")) {
@@ -904,7 +905,7 @@ document.getElementById("ViolenceOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("ViolenceOpenLabel").textContent = "↓"
-    document.getElementById("ViolenceDiv").style.background = "none";
+    document.getElementById("ViolenceDiv").style.border = "none";
     }
 })
 
@@ -994,7 +995,7 @@ document.getElementById("FraudOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("FraudOpenLabel").textContent = "↑";
-    document.getElementById("FraudDiv").style.background = "rgba(192, 248, 193, 0.7)";
+    document.getElementById("FraudDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("FraudLabel")) {
@@ -1013,7 +1014,7 @@ document.getElementById("FraudOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("FraudOpenLabel").textContent = "↓"
-    document.getElementById("FraudDiv").style.background = "none";
+    document.getElementById("FraudDiv").style.border = "none";
     }
 })
 
@@ -1086,7 +1087,7 @@ document.getElementById("PrimeOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("PrimeOpenLabel").textContent = "↑";
-    document.getElementById("Prime Sanctums").style.background = "rgba(136, 16, 16, 0.7)"
+    document.getElementById("Prime Sanctums").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("PrimeLabel")) {
@@ -1105,7 +1106,7 @@ document.getElementById("PrimeOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("PrimeOpenLabel").textContent = "↓"
-    document.getElementById("Prime Sanctums").style.background = "none"
+    document.getElementById("Prime Sanctums").style.border = "none"
     }
 })
 
@@ -1177,7 +1178,7 @@ document.getElementById("EncoreOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("EncoreOpenLabel").textContent = "↑";
-    document.getElementById("Encores").style.background = "rgba(191, 173, 239, 0.7)"
+    document.getElementById("Encores").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("EncoreLabel")) {
@@ -1196,7 +1197,7 @@ document.getElementById("EncoreOpen").addEventListener("click", (event) => {
         i.style.height = "0";
     }
     document.getElementById("EncoreOpenLabel").textContent = "↓"
-    document.getElementById("Encores").style.background = "none";
+    document.getElementById("Encores").style.border = "none";
     }
 })
 
@@ -1222,5 +1223,39 @@ Button.addEventListener("click", (event) => {
     else {
         document.getElementById("Fail").textContent = "Please select a level :P"
         document.getElementById("SelectedLevelShowDiv").style.visibility = "hidden";
+    }
+})
+
+document.getElementById("SettingsDiv").addEventListener("click", (event) => {
+    document.getElementById("Overlay").style.visibility = "visible";
+    document.getElementById("SettingsPage").style.visibility = "visible";
+    document.getElementById("HTML").style.overflow = "hidden";
+    document.getElementById("MusicOption").addEventListener("click", (event) => {
+        if (document.getElementById("MusicOption").checked === true) {
+            Music.muted = false;
+            Music.currentTime = 5;
+            Music.play()
+        }
+        else {
+            Music.muted = true;
+        }
+    })
+    if (document.getElementById("SettingsDiv").style.transform === "rotate(360deg)") {
+        document.getElementById("SettingsDiv").style.transform = "rotate(720deg)"
+    }
+    else {
+        document.getElementById("SettingsDiv").style.transform = "rotate(360deg)"
+    }
+})
+
+document.getElementById("Overlay").addEventListener("click", (event) => {
+    document.getElementById("Overlay").style.visibility = "hidden";
+    document.getElementById("SettingsPage").style.visibility = "hidden";
+    document.getElementById("HTML").style.overflow = "visible";
+    if (document.getElementById("SettingsDiv").style.transform === "rotate(360deg)") {
+        document.getElementById("SettingsDiv").style.transform = "rotate(720deg)"
+    }
+    else {
+        document.getElementById("SettingsDiv").style.transform = "rotate(360deg)"
     }
 })
