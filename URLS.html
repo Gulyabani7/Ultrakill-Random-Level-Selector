@@ -1,481 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultrakill Random Level Selector by Gülyabani</title>
-    <link rel="stylesheet" href="URLS.css">
-</head>
-<body>
-    <div id="ActualyMainThingy">
-        <h1><img src="Fotoğraflar/Ultrakill Logo2.png"> Random Level Selector</h1>
-        <div id="MainThingy">
-            <div id="LeftDiv">
-                <div id="PreludeDiv" class="LayerDiv">
+<html lang="en" id="HTML">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ultrakill Random Level Selector by Gülyabani</title>
+        <link rel="stylesheet" href="URLS.css">
+    </head>
+    <body id="Body">
+        <div id="ActualyMainThingy">
 
-                    <div class="MainLabel">
-                        <input type="checkbox" id="Prelude" name="PreludeLayer" value="AllPreludeLevels" class="Layers" autocomplete="off">
-                        <label for="Prelude"><span class="NewCheckbox"></span></label>
-                        <label for="Prelude">Prelude</label>
-                        <input type="checkbox" id="PreludeOpen" class="OpenBoxes"></input>
-                        <label for="PreludeOpen" id="PreludeOpenLabel">↓</label>
-                    </div>
+            <h1><img src="Fotoğraflar/Ultrakill Logo2.png"> Random Level Selector</h1>
 
-                    <div class="LevelList">
-                        <div class="LabelAndCheck LabelAndCheckPrelude">
-                            <input type="checkbox" id="0-1" name="Into The Fire" value="0-1" class="Levels PreludeLevel" autocomplete="off">
-                            <label for="0-1"><span class="NewCheckbox"></span></label>
-                            <label for="0-1" class="PreludeLabel LevelLabel">Into The Fire</label>
-                            <label for="0-1"><img src="Fotoğraflar/0-1_Into_the_Fire.png" class="LevelImages Preludeimg" alt="Not Found"></label>
-                        </div>
-                        <div class="LabelAndCheck LabelAndCheckPrelude">
-                            <input type="checkbox" id="0-2" name="MeatGrinder" value="0-2" class="Levels PreludeLevel " autocomplete="off">
-                            <label for="0-2"><span class="NewCheckbox"></span></label>
-                            <label for="0-2" class="PreludeLabel LevelLabel">Meat Grinder</label>
-                            <label for="0-2"><img src="Fotoğraflar/0-2_The_Meatgrinder.png" class="LevelImages Preludeimg" alt="The Revolver deals locational damage.
-
-    A headshot deals 2x damage and a limbshot deals 1.5x damage. "></label>
-                        </div>
-                        <div class="LabelAndCheck LabelAndCheckPrelude">
-                            <input type="checkbox" id="0-3" name="Double Down" value="0-3" class="Levels PreludeLevel" autocomplete="off">
-                            <label for="0-3"><span class="NewCheckbox"></span></label>
-                            <label for="0-3" class="PreludeLabel LevelLabel">Double Down</label>
-                            <label for="0-3"><img src="Fotoğraflar/0-3_Double_Down.png" class="LevelImages Preludeimg" alt="Dash: Fully invincible, costs stamina
-
-    Slide: Greater distance, no invincibility
-    Jump: Quickly out of melee range, less control "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckPrelude">
-                            <input type="checkbox" id="0-4" name="One Machine Army" value="0-4" class="Levels PreludeLevel" autocomplete="off">
-                            <label for="0-4"><span class="NewCheckbox"></span></label>
-                            <label for="0-4" class="PreludeLabel LevelLabel">One Machine Army</label>
-                            <label for="0-4"><img src="Fotoğraflar/0-4_A_One-Machine_Army.png" class="LevelImages Preludeimg" alt="Shotgun parries:
-
-    A point-blank Shotgun shot to the torso right before an enemy attack lands will deal massive damage. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckPrelude">
-                            <input type="checkbox" id="0-5" name="Cerberus" value="0-5" class="Levels PreludeLevel" autocomplete="off">
-                            <label for="0-5"><span class="NewCheckbox"></span></label>
-                            <label for="0-5" class="PreludeLabel LevelLabel">Cerberus</label>
-                            <label for="0-5"><img src="Fotoğraflar/0-5_Cerberus.png" class="LevelImages Preludeimg" alt="Attack sound cues allow you to keep track of enemies who are off screen. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckPrelude">
-                            <input type="checkbox" id="0-S" name="Something Wicked" value="0-S" class="Levels PreludeLevel" autocomplete="off">
-                            <label for="0-S"><span class="NewCheckbox"></span></label>
-                            <label for="0-S" class="PreludeLabel LevelLabel">Something Wicked</label>
-                            <label for="0-S"><img src="Fotoğraflar/0-S_Something_Wicked.webp" class="LevelImages Preludeimg" alt="Not Found"></label>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="ACT1" class="ACTNAMES">ACT I :Infinite HyperDeath
-                    <div id="LimboDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Limbo" name="LimboLayer" value="AllLimboLevels" class="Layers" autocomplete="off">
-                            <label for="Limbo"><span class="NewCheckbox"></span></label>
-                            <label for="Limbo">Limbo</label>
-                            <input type="checkbox" id="LimboOpen" class="OpenBoxes"></input>
-                            <label for="LimboOpen" id="LimboOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                        <div class="LabelAndCheck LabelAndCheckLimbo">
-                            <input type="checkbox" id="1-1" name="Heart Of The Sunrise" value="1-1" class="Levels LimboLevel" autocomplete="off">
-                            <label for="1-1"><span class="NewCheckbox"></span></label>
-                            <label for="1-1" class="LimboLabel LevelLabel">Heart Of The Sunrise</label>
-                            <label for="1-1"><img src="Fotoğraflar/1-1_Heart_of_the_Sunrise.webp" class="Limboimg LevelImages" alt="Some enemies make idle sounds to make them easier to track. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLimbo">
-                            <input type="checkbox" id="1-2" name="The Burning World" value="1-2" class="Levels LimboLevel" autocomplete="off">
-                            <label for="1-2"><span class="NewCheckbox"></span></label>
-                            <label for="1-2" class="LimboLabel LevelLabel">The Burning World</label>
-                            <label for="1-2"><img src="Fotoğraflar/1-2_The_Burning_World.png" class="Limboimg LevelImages" alt="Use the ATTRACTOR NAILGUN's magnets to form concentrated orbs of nails that can be moved around using the pull force of other magnets. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLimbo">
-                            <input type="checkbox" id="1-3" name="Halls Of Sacred Remains" value="1-3" class="Levels LimboLevel" autocomplete="off">
-                            <label for="1-3"><span class="NewCheckbox"></span></label>
-                            <label for="1-3" class="LimboLabel LevelLabel">Halls Of The Sacred Remains</label>
-                            <label for="1-3"><img src="Fotoğraflar/1-3_Halls_of_Sacred_Remains.png" class="Limboimg LevelImages" alt="Enemies can hurt other enemy types.
-
-    With quick thinking and positioning, powerful enemies can turn into powerful weapons. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLimbo">
-                            <input type="checkbox" id="1-4" name="Clair De Lune" value="1-4" class="Levels LimboLevel" autocomplete="off">
-                            <label for="1-4"><span class="NewCheckbox"></span></label>
-                            <label for="1-4" class="LimboLabel LevelLabel">Clair De Lune</label>
-                            <label for="1-4"><img src="Fotoğraflar/1-4_Clair_de_Lune.png" class="Limboimg LevelImages" alt="The ATTRACTOR NAILGUN's magnets can be attached to enemies to make mobile targets easy to hit with nails. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLimbo">
-                            <input type="checkbox" id="1-S" name="The Witless" value="1-S" class="Levels LimboLevel" autocomplete="off">
-                            <label for="1-S"><span class="NewCheckbox"></span></label>
-                            <label for="1-S" class="LimboLabel LevelLabel">The Witless</label>
-                            <label for="1-S"><img src="Fotoğraflar/1-S_The_Witless.webp" class="Limboimg LevelImages" alt="Not Found"></label>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div id="LustDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Lust" name="LustLayer" value="AllLustLevels" class="Layers" autocomplete="off">
-                            <label for="Lust"><span class="NewCheckbox"></span></label>
-                            <label for="Lust">Lust</label>
-                            <input type="checkbox" id="LustOpen" class="OpenBoxes"></input>
-                            <label for="LustOpen" id="LustOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                        <div class="LabelAndCheck LabelAndCheckLust">
-                            <input type="checkbox" id="2-1" name="BridgeBurner" value="2-1" class="Levels LustLevel" autocomplete="off">
-                            <label for="2-1"><span class="NewCheckbox"></span></label>
-                            <label for="2-1" class="LustLabel LevelLabel">BridgeBurner</label>
-                            <label for="2-1"><img src="Fotoğraflar/2-1_In_the_Air_Tonight.png" class="Lustimg LevelImages" alt="Enemies scream when falling from a fatal height. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLust">
-                            <input type="checkbox" id="2-2" name="Death At 20.000 Volts" value="2-2" class="Levels LustLevel" autocomplete="off">
-                            <label for="2-2"><span class="NewCheckbox"></span></label>
-                            <label for="2-2" class="LustLabel LevelLabel">Death At 20.000 Volts</label>
-                            <label for="2-2"><img src="Fotoğraflar/256px-2-2_Death_at_20,000_Volts.webp" class="Lustimg LevelImages" alt="SLAM BOUNCING: Jump immediately after landing from a ground slam to jump higher.
-
-    The longer the ground slam fall, the higher the bounce. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLust">
-                            <input type="checkbox" id="2-3" name="Sheer Heart Attack" value="2-3" class="Levels LustLevel" autocomplete="off">
-                            <label for="2-3"><span class="NewCheckbox"></span></label>
-                            <label for="2-3" class="LustLabel LevelLabel">Sheer Heart Attack</label>
-                            <label for="2-3"><img src="Fotoğraflar/2-3_Sheer_Heart_Attack.png" class="Lustimg LevelImages" alt="RAILCANNON variations all share the same cooldown.
-    Choose wisely which variation best fits the situation. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLust">
-                            <input type="checkbox" id="2-4" name="Court Of The Corpse King" value="2-4" class="Levels LustLevel" autocomplete="off">
-                            <label for="2-4"><span class="NewCheckbox"></span></label>
-                            <label for="2-4" class="LustLabel LevelLabel">Court Of The Corpse King</label>
-                            <label for="2-4"><img src="Fotoğraflar/2-4_Court_of_the_Corpse_King.png" class="Lustimg LevelImages" alt="SLIDING will retain previous momentum for a short amount of time.
-
-    Chaining quick SLIDE JUMPS after a DASH JUMP will give you incredible sustained speed. "></label>
-                        </div>
-
-                        <div class="LabelAndCheck LabelAndCheckLust">
-                            <input type="checkbox" id="2-S" name="All-Imperfect Love Song" value="2-S" class="Levels LustLevel" autocomplete="off">
-                            <label for="2-S"><span class="NewCheckbox"></span></label>
-                            <label for="2-S" class="LustLabel LevelLabel">All-Imperfect Love Song</label>
-                            <label for="2-S"><img src="Fotoğraflar/2-S_All-Imperfect_Love_Song.webp" class="Lustimg LevelImages" alt="Not Found"></label>
-                        </div>
-                        </div>
-                        
-                    </div>
-                    <div id="GluttonyDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Gluttony" name="GluttonyLayer" value="AllGluttonyLevels" class="Layers" autocomplete="off">
-                            <label for="Gluttony"><span class="NewCheckbox"></span></label>
-                            <label for="Gluttony">Gluttony</label>
-                            <input type="checkbox" id="GluttonyOpen" class="OpenBoxes"></input>
-                            <label for="GluttonyOpen" id="GluttonyOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckGluttony">
-                                <input type="checkbox" id="3-1" name="Belly Of The Beast" value="3-1" class="Levels GluttonyLevel" autocomplete="off">
-                                <label for="3-1"><span class="NewCheckbox"></span></label>
-                                <label for="3-1" class="GluttonyLabel LevelLabel">Belly Of The Beast</label>
-                                <label for="3-1"><img src="Fotoğraflar/3-1_Belly_of_the_Beast.png" class="Gluttonyimg LevelImages" alt="Environmental hazards such as harmful liquids will hurt enemies as well. "></label>
-                            </div>
-
-                            <div class="LabelAndCheck LabelAndCheckGluttony">
-                                <input type="checkbox" id="3-2" name="In The Flesh" value="3-2" class="Levels GluttonyLevel" autocomplete="off">
-                                <label for="3-2"><span class="NewCheckbox"></span></label>
-                                <label for="3-2" class="GluttonyLabel LevelLabel">In The Flesh</label>
-                                <label for="3-2"><img src="Fotoğraflar/3-2_In_the_Flesh.png" class="Gluttonyimg LevelImages" alt="If you're having trouble keeping up with a tough enemy, stand back and observe.
-
-    Every enemy has its tells and patterns and learning those can be your key to victory. "></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="ACT2" class="ACTNAMES">ACT II: Imperfect Hatred
-                    <div id="GreedDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Greed" name="GreedLayer" value="AllGreedLevel" class="Layers" autocomplete="off">
-                            <label for="Greed"><span class="NewCheckbox"></span></label>
-                            <label for="Greed">Greed</label>
-                            <input type="checkbox" id="GreedOpen" class="OpenBoxes"></input>
-                            <label for="GreedOpen" id="GreedOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckGreed">
-                                <input type="checkbox" id="4-1" name="Slaves To Power" value="4-1" class="Levels GreedLevel" autocomplete="off">
-                                <label for="4-1"><span class="NewCheckbox"></span></label>
-                                <label for="4-1" class="GreedLabel LevelLabel">Slaves To Power</label>
-                                <label for="4-1"><img src="Fotoğraflar/4-1_Slaves_to_Power.png" class="Greedimg LevelImages" alt="HITSCAN weapons can be used to hit the shotgun's CORE EJECT in mid-air to increase its damage and blast radius. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckGreed">
-                                <input type="checkbox" id="4-2" name="God Damn The Sun" value="4-2" class="Levels GreedLevel" autocomplete="off">
-                                <label for="4-2"><span class="NewCheckbox"></span></label>
-                                <label for="4-2" class="GreedLabel LevelLabel">God Damn The Sun</label>
-                                <label for="4-2"><img src="Fotoğraflar/4-2_God_Damn_the_Sun.png" class="Greedimg LevelImages" alt="POWER-UPS can be stacked. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckGreed">
-                                <input type="checkbox" id="4-3" name="A Shot In The Dark" value="4-3" class="Levels GreedLevel" autocomplete="off">
-                                <label for="4-3"><span class="NewCheckbox"></span></label>
-                                <label for="4-3" class="GreedLabel LevelLabel">A Shot In The Dark</label>
-                                <label for="4-3"><img src="Fotoğraflar/4-3_A_Shot_in_the_Dark.png" class="Greedimg LevelImages" alt="Hitting an enemy with only the edge of an explosion will launch them without dealing much damage, making it a risky but effective tool against Stalkers. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckGreed">
-                                <input type="checkbox" id="4-4" name="Clair De Soleil" value="4-4" class="Levels GreedLevel" autocomplete="off">
-                                <label for="4-4"><span class="NewCheckbox"></span></label>
-                                <label for="4-4" class="GreedLabel LevelLabel">Clair De Soleil</label>
-                                <label for="4-4"><img src="Fotoğraflar/4-4_Clair_de_Soleil.webp" class="Greedimg LevelImages" alt="Airborne coins can be shot with any hitscan weapon. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckGreed">
-                                <input type="checkbox" id="4-S" name="Clash Of The Brandicoot" value="4-S" class="Levels GreedLevel" autocomplete="off">
-                                <label for="4-S"><span class="NewCheckbox"></span></label>
-                                <label for="4-S" class="GreedLabel LevelLabel">Clash Of The Brandicoot</label>
-                                <label for="4-S"><img src="Fotoğraflar/4-S_Clash_of_the_Brandicoot.webp" class="Greedimg LevelImages" alt="Not Found"></label>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div id="WrathDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Wrath" name="WrathLayer" value="AllWrathLevels" class="Layers" autocomplete="off">
-                            <label for="Wrath"><span class="NewCheckbox"></span></label>
-                            <label for="Wrath">Wrath</label>
-                            <input type="checkbox" id="WrathOpen" class="OpenBoxes"></input>
-                            <label for="WrathOpen" id="WrathOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckWrath">
-                                <input type="checkbox" id="5-1" name="In The Wake Of Poseidon" value="5-1" class="Levels WrathLevel" autocomplete="off">
-                                <label for="5-1"><span class="NewCheckbox"></span></label>
-                                <label for="5-1" class="WrathLabel LevelLabel">In The Wake Of Poseidon</label>
-                                <label for="5-1"><img src="Fotoğraflar/5-1_In_the_Wake_of_Poseidon.webp" class="Wrathimg LevelImages" alt="Falling underwater is slow, but a ground slam allows for a quick return to the ground. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckWrath">
-                                <input type="checkbox" id="5-2" name="Waves Of The Starless Sea" value="5-2" class="Levels WrathLevel" autocomplete="off">
-                                <label for="5-2"><span class="NewCheckbox"></span></label>
-                                <label for="5-2" class="WrathLabel LevelLabel">Waves Of The Starless Sea</label>
-                                <label for="5-2"><img src="Fotoğraflar/5-2_Waves_of_the_Starless_Sea.png" class="Wrathimg LevelImages" alt="Sliding onto water will cause one to skip across its surface. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckWrath">
-                                <input type="checkbox" id="5-3" name="Ship Of Fools" value="5-3" class="Levels WrathLevel" autocomplete="off">
-                                <label for="5-3"><span class="NewCheckbox"></span></label>
-                                <label for="5-3" class="WrathLabel LevelLabel">Ship Of Fools</label>
-                                <label for="5-3"><img src="Fotoğraflar/5-3_Ship_of_Fools.png" class="Wrathimg LevelImages" alt="If an enemy is blessed by an Idol, a direct visible connection is formed between the two, allowing one to easily track down and destroy the protector.Ow."></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckWrath">
-                                <input type="checkbox" id="5-4" name="Leaviathan" value="5-4" class="Levels WrathLevel" autocomplete="off">
-                                <label for="5-4"><span class="NewCheckbox"></span></label>
-                                <label for="5-4" class="WrathLabel LevelLabel">Leaviathan</label>
-                                <label for="5-4"><img src="Fotoğraflar/5-4_Leviathan.png" class="Wrathimg LevelImages" alt="Explosions deflect projectiles.
-
-    If an explosion is caused right from where an enemy shoots a projectile, it can backfire and hit them instead. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckWrath">
-                                <input type="checkbox" id="5-S" name="I Only Say Morning" value="5-S" class="Levels WrathLevel" autocomplete="off">
-                                <label for="5-S"><span class="NewCheckbox"></span></label>
-                                <label for="5-S" class="WrathLabel LevelLabel">I Only Say Morning</label>
-                                <label for="5-S"><img src="Fotoğraflar/5-S_I_Only_Say_Morning.webp" class="Wrathimg LevelImages" alt="Not Found"></label>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div id="HeresyDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Heresy" name="HeresyLayer" value="AllHeresyLevels" class="Layers" autocomplete="off">
-                            <label for="Heresy"><span class="NewCheckbox"></span></label>
-                            <label for="Heresy">Heresy</label>
-                            <input type="checkbox" id="HeresyOpen" class="OpenBoxes"></input>
-                            <label for="HeresyOpen" id="HeresyOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckHeresy">
-                                <input type="checkbox" id="6-1" name="Cry For The Weeper" value="6-1" class="Levels HeresyLevel" autocomplete="off">
-                                <label for="6-1"><span class="NewCheckbox"></span></label>
-                                <label for="6-1" class="HeresyLabel LevelLabel">Cry For The Weeper</label>
-                                <label for="6-1"><img src="Fotoğraflar/6-1_Cry_for_the_Weeper.png" class="Heresyimg LevelImages" alt="The space of a large arena can be used to one's advantage.
-
-    Using the environment to break line-of-sight with enemies allows for some breathing room and time to consider target prioritization. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckHeresy">
-                                <input type="checkbox" id="6-2" name="Aesthetics Of Hate" value="6-2" class="Levels HeresyLevel" autocomplete="off">
-                                <label for="6-2"><span class="NewCheckbox"></span></label>
-                                <label for="6-2"class="HeresyLabel LevelLabel">Aesthetics Of Hate</label>
-                                <label for="6-2"><img src="Fotoğraflar/6-2_Aesthetics_of_Hate.png" class="Heresyimg LevelImages" alt="DON'T WASTE STAMINA!
-
-    Dashing needlessly while fighting very aggressive foes will quickly cause one to have none left when it is most needed. "></label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="ACT3" class="ACTNAMES">ACT III:Godfist Suicide
-                    <div id="ViolenceDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Violence" name="ViolenceLayer" value="AllViolenceLevels" class="Layers" autocomplete="off">
-                            <label for="Violence"><span class="NewCheckbox"></span></label>
-                            <label for="Violence">Violence</label>
-                            <input type="checkbox" id="ViolenceOpen" class="OpenBoxes"></input>
-                            <label for="ViolenceOpen" id="ViolenceOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckViolence">
-                                <input type="checkbox" id="7-1" name="Garden Of Forking Paths" value="7-1" class="Levels ViolenceLevel" autocomplete="off">
-                                <label for="7-1"><span class="NewCheckbox"></span></label>
-                                <label for="7-1" class="ViolenceLabel LevelLabel">Garden Of Forking Paths</label>
-                                <label for="7-1"><img src="Fotoğraflar/7-1_Garden_of_Forking_Paths.png" class="Violenceimg LevelImages" alt="Homing projectiles may be more difficult to dodge, but their tracking and slower speed makes them much easier to parry. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckViolence">
-                                <input type="checkbox" id="7-2" name="Light Up The Night" value="7-2" class="Levels ViolenceLevel" autocomplete="off">
-                                <label for="7-2"><span class="NewCheckbox"></span></label>
-                                <label for="7-2" class="ViolenceLabel LevelLabel">Light Up The Night</label>
-                                <label for="7-2"><img src="Fotoğraflar/7-2_Light_Up_the_Night.webp" class="Violenceimg LevelImages" alt="Mannequins can be hard to hit due to their speed, but they lose air control when launched or shot down from a surface, making them unable to move for a short moment."></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckViolence">
-                                <input type="checkbox" id="7-3" name="No Sound No Memory" value="7-3" class="Levels ViolenceLevel" autocomplete="off">
-                                <label for="7-3"><span class="NewCheckbox"></span></label>
-                                <label for="7-3" class="ViolenceLabel LevelLabel">No Sound No Memory</label>
-                                <label for="7-3"><img src="Fotoğraflar/7-3_No_Sound_No_Memory.png" class="Violenceimg LevelImages" alt="The Knuckleblaster's blast wave is also capable of breaking a Gutterman's shield, and is much easier to land in a chaotic scenario."></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckViolence">
-                                <input type="checkbox" id="7-4" name="...Like Antennas To Heaven" value="7-4" class="Levels ViolenceLevel" autocomplete="off">
-                                <label for="7-4"><span class="NewCheckbox"></span></label>
-                                <label for="7-4" class="ViolenceLabel LevelLabel">...Like Antennas To Heaven</label>
-                                <label for="7-4"><img src="Fotoğraflar/7-4_Like_Antennas_to_Heaven.png" class="Violenceimg LevelImages" alt="A direct hit from the Knuckleblaster has extremely powerful knockback, making it extremely powerful for launching enemies into pits and other environmental hazards. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckViolence">
-                                <input type="checkbox" id="7-S" name="Hell Bath No Fury" value="7-S" class="Levels ViolenceLevel" autocomplete="off">
-                                <label for="7-S"><span class="NewCheckbox"></span></label>
-                                <label for="7-S" class="ViolenceLabel LevelLabel">Hell Bath No Fury</label>
-                                <label for="7-S"><img src="Fotoğraflar/7-S_Hell_Bath_No_Fury.webp" class="Violenceimg LevelImages" alt="Not Found"></label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="FraudDiv" class="LayerDiv">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Fraud" name="FraudLayer" value="AllFraudLevels" class="Layers" autocomplete="off">
-                            <label for="Fraud"><span class="NewCheckbox"></span></label>
-                            <label for="Fraud">Fraud</label>
-                            <input type="checkbox" id="FraudOpen" class="OpenBoxes"></input>
-                            <label for="FraudOpen" id="FraudOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckFraud">
-                                <input type="checkbox" id="8-1" name="Hurtbreak Wonderland" value="8-1" class="Levels FraudLevel" autocomplete="off">
-                                <label for="Fraud"><span class="NewCheckbox"></span></label>
-                                <label for="8-1" class="FraudLabel LevelLabel">Hurtbreak Wonderland</label>
-                                <label for="8-1"><img src="Fotoğraflar/8-1_Hurtbreak_Wonderland.webp" class="Fraudimg LevelImages" alt="Magenta colored attacks can not be dashed through and must be avoided entirely. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckFraud">
-                                <input type="checkbox" id="8-2" name="Through The Mirror" value="8-2" class="Levels FraudLevel" autocomplete="off">
-                                <label for="8-2"><span class="NewCheckbox"></span></label>
-                                <label for="8-2" class="FraudLabel LevelLabel">Through The Mirror</label>
-                                <label for="8-2"><img src="Fotoğraflar/8-2_Through_the_Mirror.webp" class="Fraudimg LevelImages" alt="Blood Puppets do not grant kills or style points, but their blood can still heal. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckFraud">
-                                <input type="checkbox" id="8-3" name="Disintegration Loop" value="8-3" class="Levels FraudLevel" autocomplete="off">
-                                <label for="8-3"><span class="NewCheckbox"></span></label>
-                                <label for="8-3" class="FraudLabel LevelLabel">Disintegration Loop</label>
-                                <label for="8-3"><img src="Fotoğraflar/8-3_Disintegration_Loop.png" class="Fraudimg LevelImages" alt="When facing down a difficult foe, it may be beneficial to first get rid of the fodder to reduce distractions. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckFraud">
-                                <input type="checkbox" id="8-4" name="Final Flight" value="8-4" class="Levels FraudLevel" autocomplete="off">
-                                <label for="8-4"><span class="NewCheckbox"></span></label>
-                                <label for="8-4" class="FraudLabel LevelLabel">Final Flight</label>
-                                <label for="8-4"><img src="Fotoğraflar/8-4_Final_Flight.webp" class="Fraudimg LevelImages" alt="Sometimes it may be more beneficial to stay at a distance and wait for an opening before getting close. "></label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="Prime Sanctums" class="LayerDiv">
-                    <div id="PrimeLayer">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Prime" name="PrimeLayer" value="AllPrimeLevels" class="Layers" autocomplete="off">
-                            <label for="Prime"><span class="NewCheckbox"></span></label>
-                            <label for="Prime">Prime Sanctums</label>
-                            <input type="checkbox" id="PrimeOpen" class="OpenBoxes"></input>
-                            <label for="PrimeOpen" id="PrimeOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckPrime">
-                                <input type="checkbox" id="P-1" name="Soul Survivor" value="P-1" class="Levels PrimeLevel" autocomplete="off">
-                                <label for="P-1"><span class="NewCheckbox"></span></label>
-                                <label for="P-1" class="PrimeLabel LevelLabel">Soul Survivor</label>
-                                <label for="P-1"><img src="Fotoğraflar/P-1_Soul_Survivor.png" class="LevelImages Primeimg" alt="Parries can be used as a powerful healing tool.
-
-    Parrying any enemy projectile or melee attack will fully replenish your health up to the hard damage limit. "></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckPrime">
-                                <input type="checkbox" id="P-2" name="Soul Survivor" value="P-2" class="Levels PrimeLevel" autocomplete="off">
-                                <label for="P-2"><span class="NewCheckbox"></span></label>
-                                <label for="P-2" class="PrimeLabel LevelLabel">Wait Of The World</label>
-                                <label for="P-2"><img src="Fotoğraflar/P-2_Wait_of_the_World.png" class="LevelImages Primeimg" alt="H a v e   f u n. "></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="Encores" class="LayerDiv">
-                    <div id="EncoreLayer">
-                        <div class="MainLabel">
-                            <input type="checkbox" id="Encore" name="EncoreLayer" value="AllEncoreLevels" class="Layers" autocomplete="off">
-                            <label for="Encore"><span class="NewCheckbox"></span></label>
-                            <label for="Encore">Encores</label>
-                            <input type="checkbox" id="EncoreOpen" class="OpenBoxes"></input>
-                            <label for="EncoreOpen" id="EncoreOpenLabel">↓</label>
-                        </div>
-
-                        <div class="LevelList">
-                            <div class="LabelAndCheck LabelAndCheckEncore">
-                                <input type="checkbox" id="0-E" name="This Heat, An Evil Heat" value="0-E" class="Levels EncoreLevel" autocomplete="off">
-                                <label for="0-E"><span class="NewCheckbox"></span></label>
-                                <label for="0-E" class="EncoreLabel LevelLabel">This Heat, An Evil Heat</label>
-                                <label for="0-E"><img src="Fotoğraflar/0-E_This_Heat,_An_Evil_Heat.png" class="LevelImages Encoreimg" alt="If you're having trouble with a specific encounter, take a moment to weigh your options.
-
-    There may be some trick, tool or alternative prioritization that will tip the scales in your favor."></label>
-                            </div>
-                            <div class="LabelAndCheck LabelAndCheckEncore">
-                                <input type="checkbox" id="1-E" name="...Then Fell The Ashes" value="1-E" class="Levels EncoreLevel" autocomplete="off">    
-                                <label for="1-E"><span class="NewCheckbox"></span></label>
-                                <label for="1-E" class="EncoreLabel LevelLabel">...Then Fell The Ashes</label>
-                                <label for="1-E"><img src="Fotoğraflar/1-E_...Then_Fell_the_Ashes.png" class="LevelImages Encoreimg" alt="ENEMY STEP: Jump while in mid-air near an enemy to jump off the enemy. This resets the amount of available walljumps without needing to land. "></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button id="GenerateButton">Generate</button>
-                <p id="Fail"></p>
+            <div id="SettingsDiv">
+                <img src="recolored.svg" width="30px">    
             </div>
-            <div id="RightDiv">
-                <div id="SelectedLevelShowDiv">
-                    <img id="SelectedLevel">
+
+            <div id="SettingsPage">
+                <div id="Settings">
+                    <label for="MusicOption">Music:</label>
+                    <input type="checkbox" id="MusicOption" autocomplete="off">
+                    <label for="MusicOption"><span class="NewCheckbox"></span></label>
+                    <audio src="Sesler/The Fire Is Gone (For Music Box) - Heaven Pierce Her.mp3" id="MusicSound"loop></audio>
+                </div>
+                <div>
+                    <h2>More About Me</h2>
                     <hr>
-                    <p id="TipOfTheDay"></p>
+                    <p></p>
+                </div>
+            </div>
+            <div id="MainThingy">
+                <div id="LeftDiv">
+                    <div id="PreludeDiv" class="LayerDiv">
+
+                        <div class="MainLabel">
+                            <input type="checkbox" id="Prelude" name="PreludeLayer" value="AllPreludeLevels" class="Layers" autocomplete="off">
+                            <label for="Prelude"><span class="NewCheckbox"></span></label>
+                            <label for="Prelude">Prelude</label>
+                            <input type="checkbox" id="PreludeOpen" class="OpenBoxes"></input>
+                            <label for="PreludeOpen" id="PreludeOpenLabel">↓</label>
+                        </div>
+
+                        <div class="LevelList">
+                            <div class="LabelAndCheck LabelAndCheckPrelude">
+                                <input type="checkbox" id="0-1" name="Into The Fire" value="0-1" class="Levels PreludeLevel" autocomplete="off">
+                                <label for="0-1"><span class="NewCheckbox"></span></label>
+                                <label for="0-1" class="PreludeLabel LevelLabel">Into The Fire</label>
+                                <label for="0-1"><img src="Fotoğraflar/0-1_Into_the_Fire.png" class="LevelImages Preludeimg" alt="Not Found"></label>
+                            </div>
+                            <div class="LabelAndCheck LabelAndCheckPrelude">
+                                <input type="checkbox" id="0-2" name="MeatGrinder" value="0-2" class="Levels PreludeLevel " autocomplete="off">
+                                <label for="0-2"><span class="NewCheckbox"></span></label>
+                                <label for="0-2" class="PreludeLabel LevelLabel">Meat Grinder</label>
+                                <label for="0-2"><img src="Fotoğraflar/0-2_The_Meatgrinder.png" class="LevelImages Preludeimg" alt="The Revolver deals locational damage.
+
+        A headshot deals 2x damage and a limbshot deals 1.5x damage. "></label>
+                            </div>
+                            <div class="LabelAndCheck LabelAndCheckPrelude">
+                                <input type="checkbox" id="0-3" name="Double Down" value="0-3" class="Levels PreludeLevel" autocomplete="off">
+                                <label for="0-3"><span class="NewCheckbox"></span></label>
+                                <label for="0-3" class="PreludeLabel LevelLabel">Double Down</label>
+                                <label for="0-3"><img src="Fotoğraflar/0-3_Double_Down.png" class="LevelImages Preludeimg" alt="Dash: Fully invincible, costs stamina
+
+        Slide: Greater distance, no invincibility
+        Jump: Quickly out of melee range, less control "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckPrelude">
+                                <input type="checkbox" id="0-4" name="One Machine Army" value="0-4" class="Levels PreludeLevel" autocomplete="off">
+                                <label for="0-4"><span class="NewCheckbox"></span></label>
+                                <label for="0-4" class="PreludeLabel LevelLabel">One Machine Army</label>
+                                <label for="0-4"><img src="Fotoğraflar/0-4_A_One-Machine_Army.png" class="LevelImages Preludeimg" alt="Shotgun parries:
+
+        A point-blank Shotgun shot to the torso right before an enemy attack lands will deal massive damage. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckPrelude">
+                                <input type="checkbox" id="0-5" name="Cerberus" value="0-5" class="Levels PreludeLevel" autocomplete="off">
+                                <label for="0-5"><span class="NewCheckbox"></span></label>
+                                <label for="0-5" class="PreludeLabel LevelLabel">Cerberus</label>
+                                <label for="0-5"><img src="Fotoğraflar/0-5_Cerberus.png" class="LevelImages Preludeimg" alt="Attack sound cues allow you to keep track of enemies who are off screen. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckPrelude">
+                                <input type="checkbox" id="0-S" name="Something Wicked" value="0-S" class="Levels PreludeLevel" autocomplete="off">
+                                <label for="0-S"><span class="NewCheckbox"></span></label>
+                                <label for="0-S" class="PreludeLabel LevelLabel">Something Wicked</label>
+                                <label for="0-S"><img src="Fotoğraflar/0-S_Something_Wicked.webp" class="LevelImages Preludeimg" alt="Not Found"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ACT1" class="ACTNAMES">ACT I :Infinite HyperDeath
+                        <div id="LimboDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Limbo" name="LimboLayer" value="AllLimboLevels" class="Layers" autocomplete="off">
+                                <label for="Limbo"><span class="NewCheckbox"></span></label>
+                                <label for="Limbo">Limbo</label>
+                                <input type="checkbox" id="LimboOpen" class="OpenBoxes"></input>
+                                <label for="LimboOpen" id="LimboOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                            <div class="LabelAndCheck LabelAndCheckLimbo">
+                                <input type="checkbox" id="1-1" name="Heart Of The Sunrise" value="1-1" class="Levels LimboLevel" autocomplete="off">
+                                <label for="1-1"><span class="NewCheckbox"></span></label>
+                                <label for="1-1" class="LimboLabel LevelLabel">Heart Of The Sunrise</label>
+                                <label for="1-1"><img src="Fotoğraflar/1-1_Heart_of_the_Sunrise.webp" class="Limboimg LevelImages" alt="Some enemies make idle sounds to make them easier to track. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLimbo">
+                                <input type="checkbox" id="1-2" name="The Burning World" value="1-2" class="Levels LimboLevel" autocomplete="off">
+                                <label for="1-2"><span class="NewCheckbox"></span></label>
+                                <label for="1-2" class="LimboLabel LevelLabel">The Burning World</label>
+                                <label for="1-2"><img src="Fotoğraflar/1-2_The_Burning_World.png" class="Limboimg LevelImages" alt="Use the ATTRACTOR NAILGUN's magnets to form concentrated orbs of nails that can be moved around using the pull force of other magnets. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLimbo">
+                                <input type="checkbox" id="1-3" name="Halls Of Sacred Remains" value="1-3" class="Levels LimboLevel" autocomplete="off">
+                                <label for="1-3"><span class="NewCheckbox"></span></label>
+                                <label for="1-3" class="LimboLabel LevelLabel">Halls Of The Sacred Remains</label>
+                                <label for="1-3"><img src="Fotoğraflar/1-3_Halls_of_Sacred_Remains.png" class="Limboimg LevelImages" alt="Enemies can hurt other enemy types.
+
+        With quick thinking and positioning, powerful enemies can turn into powerful weapons. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLimbo">
+                                <input type="checkbox" id="1-4" name="Clair De Lune" value="1-4" class="Levels LimboLevel" autocomplete="off">
+                                <label for="1-4"><span class="NewCheckbox"></span></label>
+                                <label for="1-4" class="LimboLabel LevelLabel">Clair De Lune</label>
+                                <label for="1-4"><img src="Fotoğraflar/1-4_Clair_de_Lune.png" class="Limboimg LevelImages" alt="The ATTRACTOR NAILGUN's magnets can be attached to enemies to make mobile targets easy to hit with nails. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLimbo">
+                                <input type="checkbox" id="1-S" name="The Witless" value="1-S" class="Levels LimboLevel" autocomplete="off">
+                                <label for="1-S"><span class="NewCheckbox"></span></label>
+                                <label for="1-S" class="LimboLabel LevelLabel">The Witless</label>
+                                <label for="1-S"><img src="Fotoğraflar/1-S_The_Witless.webp" class="Limboimg LevelImages" alt="Not Found"></label>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="LustDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Lust" name="LustLayer" value="AllLustLevels" class="Layers" autocomplete="off">
+                                <label for="Lust"><span class="NewCheckbox"></span></label>
+                                <label for="Lust">Lust</label>
+                                <input type="checkbox" id="LustOpen" class="OpenBoxes"></input>
+                                <label for="LustOpen" id="LustOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                            <div class="LabelAndCheck LabelAndCheckLust">
+                                <input type="checkbox" id="2-1" name="BridgeBurner" value="2-1" class="Levels LustLevel" autocomplete="off">
+                                <label for="2-1"><span class="NewCheckbox"></span></label>
+                                <label for="2-1" class="LustLabel LevelLabel">BridgeBurner</label>
+                                <label for="2-1"><img src="Fotoğraflar/2-1_In_the_Air_Tonight.png" class="Lustimg LevelImages" alt="Enemies scream when falling from a fatal height. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLust">
+                                <input type="checkbox" id="2-2" name="Death At 20.000 Volts" value="2-2" class="Levels LustLevel" autocomplete="off">
+                                <label for="2-2"><span class="NewCheckbox"></span></label>
+                                <label for="2-2" class="LustLabel LevelLabel">Death At 20.000 Volts</label>
+                                <label for="2-2"><img src="Fotoğraflar/256px-2-2_Death_at_20,000_Volts.webp" class="Lustimg LevelImages" alt="SLAM BOUNCING: Jump immediately after landing from a ground slam to jump higher.
+
+        The longer the ground slam fall, the higher the bounce. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLust">
+                                <input type="checkbox" id="2-3" name="Sheer Heart Attack" value="2-3" class="Levels LustLevel" autocomplete="off">
+                                <label for="2-3"><span class="NewCheckbox"></span></label>
+                                <label for="2-3" class="LustLabel LevelLabel">Sheer Heart Attack</label>
+                                <label for="2-3"><img src="Fotoğraflar/2-3_Sheer_Heart_Attack.png" class="Lustimg LevelImages" alt="RAILCANNON variations all share the same cooldown.
+        Choose wisely which variation best fits the situation. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLust">
+                                <input type="checkbox" id="2-4" name="Court Of The Corpse King" value="2-4" class="Levels LustLevel" autocomplete="off">
+                                <label for="2-4"><span class="NewCheckbox"></span></label>
+                                <label for="2-4" class="LustLabel LevelLabel">Court Of The Corpse King</label>
+                                <label for="2-4"><img src="Fotoğraflar/2-4_Court_of_the_Corpse_King.png" class="Lustimg LevelImages" alt="SLIDING will retain previous momentum for a short amount of time.
+
+        Chaining quick SLIDE JUMPS after a DASH JUMP will give you incredible sustained speed. "></label>
+                            </div>
+
+                            <div class="LabelAndCheck LabelAndCheckLust">
+                                <input type="checkbox" id="2-S" name="All-Imperfect Love Song" value="2-S" class="Levels LustLevel" autocomplete="off">
+                                <label for="2-S"><span class="NewCheckbox"></span></label>
+                                <label for="2-S" class="LustLabel LevelLabel">All-Imperfect Love Song</label>
+                                <label for="2-S"><img src="Fotoğraflar/2-S_All-Imperfect_Love_Song.webp" class="Lustimg LevelImages" alt="Not Found"></label>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div id="GluttonyDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Gluttony" name="GluttonyLayer" value="AllGluttonyLevels" class="Layers" autocomplete="off">
+                                <label for="Gluttony"><span class="NewCheckbox"></span></label>
+                                <label for="Gluttony">Gluttony</label>
+                                <input type="checkbox" id="GluttonyOpen" class="OpenBoxes"></input>
+                                <label for="GluttonyOpen" id="GluttonyOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckGluttony">
+                                    <input type="checkbox" id="3-1" name="Belly Of The Beast" value="3-1" class="Levels GluttonyLevel" autocomplete="off">
+                                    <label for="3-1"><span class="NewCheckbox"></span></label>
+                                    <label for="3-1" class="GluttonyLabel LevelLabel">Belly Of The Beast</label>
+                                    <label for="3-1"><img src="Fotoğraflar/3-1_Belly_of_the_Beast.png" class="Gluttonyimg LevelImages" alt="Environmental hazards such as harmful liquids will hurt enemies as well. "></label>
+                                </div>
+
+                                <div class="LabelAndCheck LabelAndCheckGluttony">
+                                    <input type="checkbox" id="3-2" name="In The Flesh" value="3-2" class="Levels GluttonyLevel" autocomplete="off">
+                                    <label for="3-2"><span class="NewCheckbox"></span></label>
+                                    <label for="3-2" class="GluttonyLabel LevelLabel">In The Flesh</label>
+                                    <label for="3-2"><img src="Fotoğraflar/3-2_In_the_Flesh.png" class="Gluttonyimg LevelImages" alt="If you're having trouble keeping up with a tough enemy, stand back and observe.
+
+        Every enemy has its tells and patterns and learning those can be your key to victory. "></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ACT2" class="ACTNAMES">ACT II: Imperfect Hatred
+                        <div id="GreedDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Greed" name="GreedLayer" value="AllGreedLevel" class="Layers" autocomplete="off">
+                                <label for="Greed"><span class="NewCheckbox"></span></label>
+                                <label for="Greed">Greed</label>
+                                <input type="checkbox" id="GreedOpen" class="OpenBoxes"></input>
+                                <label for="GreedOpen" id="GreedOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckGreed">
+                                    <input type="checkbox" id="4-1" name="Slaves To Power" value="4-1" class="Levels GreedLevel" autocomplete="off">
+                                    <label for="4-1"><span class="NewCheckbox"></span></label>
+                                    <label for="4-1" class="GreedLabel LevelLabel">Slaves To Power</label>
+                                    <label for="4-1"><img src="Fotoğraflar/4-1_Slaves_to_Power.png" class="Greedimg LevelImages" alt="HITSCAN weapons can be used to hit the shotgun's CORE EJECT in mid-air to increase its damage and blast radius. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckGreed">
+                                    <input type="checkbox" id="4-2" name="God Damn The Sun" value="4-2" class="Levels GreedLevel" autocomplete="off">
+                                    <label for="4-2"><span class="NewCheckbox"></span></label>
+                                    <label for="4-2" class="GreedLabel LevelLabel">God Damn The Sun</label>
+                                    <label for="4-2"><img src="Fotoğraflar/4-2_God_Damn_the_Sun.png" class="Greedimg LevelImages" alt="POWER-UPS can be stacked. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckGreed">
+                                    <input type="checkbox" id="4-3" name="A Shot In The Dark" value="4-3" class="Levels GreedLevel" autocomplete="off">
+                                    <label for="4-3"><span class="NewCheckbox"></span></label>
+                                    <label for="4-3" class="GreedLabel LevelLabel">A Shot In The Dark</label>
+                                    <label for="4-3"><img src="Fotoğraflar/4-3_A_Shot_in_the_Dark.png" class="Greedimg LevelImages" alt="Hitting an enemy with only the edge of an explosion will launch them without dealing much damage, making it a risky but effective tool against Stalkers. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckGreed">
+                                    <input type="checkbox" id="4-4" name="Clair De Soleil" value="4-4" class="Levels GreedLevel" autocomplete="off">
+                                    <label for="4-4"><span class="NewCheckbox"></span></label>
+                                    <label for="4-4" class="GreedLabel LevelLabel">Clair De Soleil</label>
+                                    <label for="4-4"><img src="Fotoğraflar/4-4_Clair_de_Soleil.webp" class="Greedimg LevelImages" alt="Airborne coins can be shot with any hitscan weapon. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckGreed">
+                                    <input type="checkbox" id="4-S" name="Clash Of The Brandicoot" value="4-S" class="Levels GreedLevel" autocomplete="off">
+                                    <label for="4-S"><span class="NewCheckbox"></span></label>
+                                    <label for="4-S" class="GreedLabel LevelLabel">Clash Of The Brandicoot</label>
+                                    <label for="4-S"><img src="Fotoğraflar/4-S_Clash_of_the_Brandicoot.webp" class="Greedimg LevelImages" alt="Not Found"></label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="WrathDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Wrath" name="WrathLayer" value="AllWrathLevels" class="Layers" autocomplete="off">
+                                <label for="Wrath"><span class="NewCheckbox"></span></label>
+                                <label for="Wrath">Wrath</label>
+                                <input type="checkbox" id="WrathOpen" class="OpenBoxes"></input>
+                                <label for="WrathOpen" id="WrathOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckWrath">
+                                    <input type="checkbox" id="5-1" name="In The Wake Of Poseidon" value="5-1" class="Levels WrathLevel" autocomplete="off">
+                                    <label for="5-1"><span class="NewCheckbox"></span></label>
+                                    <label for="5-1" class="WrathLabel LevelLabel">In The Wake Of Poseidon</label>
+                                    <label for="5-1"><img src="Fotoğraflar/5-1_In_the_Wake_of_Poseidon.webp" class="Wrathimg LevelImages" alt="Falling underwater is slow, but a ground slam allows for a quick return to the ground. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckWrath">
+                                    <input type="checkbox" id="5-2" name="Waves Of The Starless Sea" value="5-2" class="Levels WrathLevel" autocomplete="off">
+                                    <label for="5-2"><span class="NewCheckbox"></span></label>
+                                    <label for="5-2" class="WrathLabel LevelLabel">Waves Of The Starless Sea</label>
+                                    <label for="5-2"><img src="Fotoğraflar/5-2_Waves_of_the_Starless_Sea.png" class="Wrathimg LevelImages" alt="Sliding onto water will cause one to skip across its surface. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckWrath">
+                                    <input type="checkbox" id="5-3" name="Ship Of Fools" value="5-3" class="Levels WrathLevel" autocomplete="off">
+                                    <label for="5-3"><span class="NewCheckbox"></span></label>
+                                    <label for="5-3" class="WrathLabel LevelLabel">Ship Of Fools</label>
+                                    <label for="5-3"><img src="Fotoğraflar/5-3_Ship_of_Fools.png" class="Wrathimg LevelImages" alt="If an enemy is blessed by an Idol, a direct visible connection is formed between the two, allowing one to easily track down and destroy the protector.Ow."></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckWrath">
+                                    <input type="checkbox" id="5-4" name="Leaviathan" value="5-4" class="Levels WrathLevel" autocomplete="off">
+                                    <label for="5-4"><span class="NewCheckbox"></span></label>
+                                    <label for="5-4" class="WrathLabel LevelLabel">Leaviathan</label>
+                                    <label for="5-4"><img src="Fotoğraflar/5-4_Leviathan.png" class="Wrathimg LevelImages" alt="Explosions deflect projectiles.
+
+        If an explosion is caused right from where an enemy shoots a projectile, it can backfire and hit them instead. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckWrath">
+                                    <input type="checkbox" id="5-S" name="I Only Say Morning" value="5-S" class="Levels WrathLevel" autocomplete="off">
+                                    <label for="5-S"><span class="NewCheckbox"></span></label>
+                                    <label for="5-S" class="WrathLabel LevelLabel">I Only Say Morning</label>
+                                    <label for="5-S"><img src="Fotoğraflar/5-S_I_Only_Say_Morning.webp" class="Wrathimg LevelImages" alt="Not Found"></label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="HeresyDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Heresy" name="HeresyLayer" value="AllHeresyLevels" class="Layers" autocomplete="off">
+                                <label for="Heresy"><span class="NewCheckbox"></span></label>
+                                <label for="Heresy">Heresy</label>
+                                <input type="checkbox" id="HeresyOpen" class="OpenBoxes"></input>
+                                <label for="HeresyOpen" id="HeresyOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckHeresy">
+                                    <input type="checkbox" id="6-1" name="Cry For The Weeper" value="6-1" class="Levels HeresyLevel" autocomplete="off">
+                                    <label for="6-1"><span class="NewCheckbox"></span></label>
+                                    <label for="6-1" class="HeresyLabel LevelLabel">Cry For The Weeper</label>
+                                    <label for="6-1"><img src="Fotoğraflar/6-1_Cry_for_the_Weeper.png" class="Heresyimg LevelImages" alt="The space of a large arena can be used to one's advantage.
+
+        Using the environment to break line-of-sight with enemies allows for some breathing room and time to consider target prioritization. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckHeresy">
+                                    <input type="checkbox" id="6-2" name="Aesthetics Of Hate" value="6-2" class="Levels HeresyLevel" autocomplete="off">
+                                    <label for="6-2"><span class="NewCheckbox"></span></label>
+                                    <label for="6-2"class="HeresyLabel LevelLabel">Aesthetics Of Hate</label>
+                                    <label for="6-2"><img src="Fotoğraflar/6-2_Aesthetics_of_Hate.png" class="Heresyimg LevelImages" alt="DON'T WASTE STAMINA!
+
+        Dashing needlessly while fighting very aggressive foes will quickly cause one to have none left when it is most needed. "></label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="ACT3" class="ACTNAMES">ACT III:Godfist Suicide
+                        <div id="ViolenceDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Violence" name="ViolenceLayer" value="AllViolenceLevels" class="Layers" autocomplete="off">
+                                <label for="Violence"><span class="NewCheckbox"></span></label>
+                                <label for="Violence">Violence</label>
+                                <input type="checkbox" id="ViolenceOpen" class="OpenBoxes"></input>
+                                <label for="ViolenceOpen" id="ViolenceOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckViolence">
+                                    <input type="checkbox" id="7-1" name="Garden Of Forking Paths" value="7-1" class="Levels ViolenceLevel" autocomplete="off">
+                                    <label for="7-1"><span class="NewCheckbox"></span></label>
+                                    <label for="7-1" class="ViolenceLabel LevelLabel">Garden Of Forking Paths</label>
+                                    <label for="7-1"><img src="Fotoğraflar/7-1_Garden_of_Forking_Paths.png" class="Violenceimg LevelImages" alt="Homing projectiles may be more difficult to dodge, but their tracking and slower speed makes them much easier to parry. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckViolence">
+                                    <input type="checkbox" id="7-2" name="Light Up The Night" value="7-2" class="Levels ViolenceLevel" autocomplete="off">
+                                    <label for="7-2"><span class="NewCheckbox"></span></label>
+                                    <label for="7-2" class="ViolenceLabel LevelLabel">Light Up The Night</label>
+                                    <label for="7-2"><img src="Fotoğraflar/7-2_Light_Up_the_Night.webp" class="Violenceimg LevelImages" alt="Mannequins can be hard to hit due to their speed, but they lose air control when launched or shot down from a surface, making them unable to move for a short moment."></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckViolence">
+                                    <input type="checkbox" id="7-3" name="No Sound No Memory" value="7-3" class="Levels ViolenceLevel" autocomplete="off">
+                                    <label for="7-3"><span class="NewCheckbox"></span></label>
+                                    <label for="7-3" class="ViolenceLabel LevelLabel">No Sound No Memory</label>
+                                    <label for="7-3"><img src="Fotoğraflar/7-3_No_Sound_No_Memory.png" class="Violenceimg LevelImages" alt="The Knuckleblaster's blast wave is also capable of breaking a Gutterman's shield, and is much easier to land in a chaotic scenario."></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckViolence">
+                                    <input type="checkbox" id="7-4" name="...Like Antennas To Heaven" value="7-4" class="Levels ViolenceLevel" autocomplete="off">
+                                    <label for="7-4"><span class="NewCheckbox"></span></label>
+                                    <label for="7-4" class="ViolenceLabel LevelLabel">...Like Antennas To Heaven</label>
+                                    <label for="7-4"><img src="Fotoğraflar/7-4_Like_Antennas_to_Heaven.png" class="Violenceimg LevelImages" alt="A direct hit from the Knuckleblaster has extremely powerful knockback, making it extremely powerful for launching enemies into pits and other environmental hazards. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckViolence">
+                                    <input type="checkbox" id="7-S" name="Hell Bath No Fury" value="7-S" class="Levels ViolenceLevel" autocomplete="off">
+                                    <label for="7-S"><span class="NewCheckbox"></span></label>
+                                    <label for="7-S" class="ViolenceLabel LevelLabel">Hell Bath No Fury</label>
+                                    <label for="7-S"><img src="Fotoğraflar/7-S_Hell_Bath_No_Fury.webp" class="Violenceimg LevelImages" alt="Not Found"></label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="FraudDiv" class="LayerDiv">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Fraud" name="FraudLayer" value="AllFraudLevels" class="Layers" autocomplete="off">
+                                <label for="Fraud"><span class="NewCheckbox"></span></label>
+                                <label for="Fraud">Fraud</label>
+                                <input type="checkbox" id="FraudOpen" class="OpenBoxes"></input>
+                                <label for="FraudOpen" id="FraudOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckFraud">
+                                    <input type="checkbox" id="8-1" name="Hurtbreak Wonderland" value="8-1" class="Levels FraudLevel" autocomplete="off">
+                                    <label for="Fraud"><span class="NewCheckbox"></span></label>
+                                    <label for="8-1" class="FraudLabel LevelLabel">Hurtbreak Wonderland</label>
+                                    <label for="8-1"><img src="Fotoğraflar/8-1_Hurtbreak_Wonderland.webp" class="Fraudimg LevelImages" alt="Magenta colored attacks can not be dashed through and must be avoided entirely. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckFraud">
+                                    <input type="checkbox" id="8-2" name="Through The Mirror" value="8-2" class="Levels FraudLevel" autocomplete="off">
+                                    <label for="8-2"><span class="NewCheckbox"></span></label>
+                                    <label for="8-2" class="FraudLabel LevelLabel">Through The Mirror</label>
+                                    <label for="8-2"><img src="Fotoğraflar/8-2_Through_the_Mirror.webp" class="Fraudimg LevelImages" alt="Blood Puppets do not grant kills or style points, but their blood can still heal. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckFraud">
+                                    <input type="checkbox" id="8-3" name="Disintegration Loop" value="8-3" class="Levels FraudLevel" autocomplete="off">
+                                    <label for="8-3"><span class="NewCheckbox"></span></label>
+                                    <label for="8-3" class="FraudLabel LevelLabel">Disintegration Loop</label>
+                                    <label for="8-3"><img src="Fotoğraflar/8-3_Disintegration_Loop.png" class="Fraudimg LevelImages" alt="When facing down a difficult foe, it may be beneficial to first get rid of the fodder to reduce distractions. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckFraud">
+                                    <input type="checkbox" id="8-4" name="Final Flight" value="8-4" class="Levels FraudLevel" autocomplete="off">
+                                    <label for="8-4"><span class="NewCheckbox"></span></label>
+                                    <label for="8-4" class="FraudLabel LevelLabel">Final Flight</label>
+                                    <label for="8-4"><img src="Fotoğraflar/8-4_Final_Flight.webp" class="Fraudimg LevelImages" alt="Sometimes it may be more beneficial to stay at a distance and wait for an opening before getting close. "></label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="Prime Sanctums" class="LayerDiv">
+                        <div id="PrimeLayer">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Prime" name="PrimeLayer" value="AllPrimeLevels" class="Layers" autocomplete="off">
+                                <label for="Prime"><span class="NewCheckbox"></span></label>
+                                <label for="Prime">Prime Sanctums</label>
+                                <input type="checkbox" id="PrimeOpen" class="OpenBoxes"></input>
+                                <label for="PrimeOpen" id="PrimeOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckPrime">
+                                    <input type="checkbox" id="P-1" name="Soul Survivor" value="P-1" class="Levels PrimeLevel" autocomplete="off">
+                                    <label for="P-1"><span class="NewCheckbox"></span></label>
+                                    <label for="P-1" class="PrimeLabel LevelLabel">Soul Survivor</label>
+                                    <label for="P-1"><img src="Fotoğraflar/P-1_Soul_Survivor.png" class="LevelImages Primeimg" alt="Parries can be used as a powerful healing tool.
+
+        Parrying any enemy projectile or melee attack will fully replenish your health up to the hard damage limit. "></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckPrime">
+                                    <input type="checkbox" id="P-2" name="Soul Survivor" value="P-2" class="Levels PrimeLevel" autocomplete="off">
+                                    <label for="P-2"><span class="NewCheckbox"></span></label>
+                                    <label for="P-2" class="PrimeLabel LevelLabel">Wait Of The World</label>
+                                    <label for="P-2"><img src="Fotoğraflar/P-2_Wait_of_the_World.png" class="LevelImages Primeimg" alt="H a v e   f u n. "></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Encores" class="LayerDiv">
+                        <div id="EncoreLayer">
+                            <div class="MainLabel">
+                                <input type="checkbox" id="Encore" name="EncoreLayer" value="AllEncoreLevels" class="Layers" autocomplete="off">
+                                <label for="Encore"><span class="NewCheckbox"></span></label>
+                                <label for="Encore">Encores</label>
+                                <input type="checkbox" id="EncoreOpen" class="OpenBoxes"></input>
+                                <label for="EncoreOpen" id="EncoreOpenLabel">↓</label>
+                            </div>
+
+                            <div class="LevelList">
+                                <div class="LabelAndCheck LabelAndCheckEncore">
+                                    <input type="checkbox" id="0-E" name="This Heat, An Evil Heat" value="0-E" class="Levels EncoreLevel" autocomplete="off">
+                                    <label for="0-E"><span class="NewCheckbox"></span></label>
+                                    <label for="0-E" class="EncoreLabel LevelLabel">This Heat, An Evil Heat</label>
+                                    <label for="0-E"><img src="Fotoğraflar/0-E_This_Heat,_An_Evil_Heat.png" class="LevelImages Encoreimg" alt="If you're having trouble with a specific encounter, take a moment to weigh your options.
+
+        There may be some trick, tool or alternative prioritization that will tip the scales in your favor."></label>
+                                </div>
+                                <div class="LabelAndCheck LabelAndCheckEncore">
+                                    <input type="checkbox" id="1-E" name="...Then Fell The Ashes" value="1-E" class="Levels EncoreLevel" autocomplete="off">    
+                                    <label for="1-E"><span class="NewCheckbox"></span></label>
+                                    <label for="1-E" class="EncoreLabel LevelLabel">...Then Fell The Ashes</label>
+                                    <label for="1-E"><img src="Fotoğraflar/1-E_...Then_Fell_the_Ashes.png" class="LevelImages Encoreimg" alt="ENEMY STEP: Jump while in mid-air near an enemy to jump off the enemy. This resets the amount of available walljumps without needing to land. "></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="GenerateButton">Generate</button>
+                    <p id="Fail"></p>
+                </div>
+                <div id="RightDiv">
+                    <div id="SelectedLevelShowDiv">
+                        <img id="SelectedLevel">
+                        <p id="TipOfTheDay"></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="URLS.js"></script>
-</body>
+        <div id="Overlay">
+                
+        </div>
+        <script src="URLS.js"></script>
+    </body>
 </html>
