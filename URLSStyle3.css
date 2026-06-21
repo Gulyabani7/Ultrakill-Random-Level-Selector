@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "VCR OSD MONO";
+    src: url("VCROSDMONO.ttf")
+}
+
+input {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.LevelLabel, .Levels, .LabelAndCheck{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 3px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.LevelList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap:10px;
+    margin: 3px;
+    justify-content: center;
+}
+
+.LabelAndCheck {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 0.7);
+    border: 2px solid rgb(115, 155, 232);
+    text-wrap-mode: wrap;
+}
+
+.LabelAndCheck > label {
+    text-wrap-mode: wrap;
+}
+
+.LevelImages {
+    border-radius: 8px;
+}
+
+
+#MainThingy {
+    font-family: "VCR OSD MONO";
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid rgb(115, 155, 232);
+    height: auto;
+    background-color: rgba(255, 192, 203, 0.7);
+    padding: 5px;
+    margin: 10px;
+    gap: 30px;
+    
+}
+
+#MainThingy div {
+    border-radius: 8px;
+}
+
+#ActualMainThingy {
+    z-index: 1;
+}
+
+#MiddleDiv {
+    border: 2px solid rgb(115, 155, 232);
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+#MiddleLeftDiv {
+    display: flex;
+    gap: 10px;
+}
+
+#MiddleRightDiv {
+    display: flex;
+}
+
+#BottomDiv {
+    display: flex;
+    border: 2px solid rgb(115, 155, 232);
+    flex-basis: 50%;
+}
+
+#SelectedLevelShowDiv {
+    background-color: rgba(255, 192, 203, 0.7);
+    border: 2px solid rgb(115, 155, 232);
+    border-radius: 8px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.MainLabel , .ACTNAMES {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(115, 155, 232);
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.LevelLabel {
+    max-width:fit-content;
+}
+
+body {
+    background: #DE2A45;
+    background: linear-gradient(360deg, rgba(155, 155, 232, 0.5) 0%, rgba(255, 192, 203, 0.5) 50%, rgba(155, 155, 232, 0.5) 100%);
+    overflow-x: hidden;
+    font-size: 1.5em;
+    font-family: "VCR OSD MONO";
+    margin: 0;
+    color: rgb(115, 115, 232);
+}
+
+
+.LayerDiv {
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.NewCheckbox {
+    display: block;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: none;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}
+
+input[type="checkbox"] + label > span{
+    margin-top: 2px;
+}
+
+input[type="checkbox"]:not(:checked)+ label > span{
+    background-image: url("Fotoğraflar/Checkbox3.webp");
+}
+
+
+input[type="checkbox"]:checked + label > span{
+    background-image: url("Fotoğraflar/CheckboxSelected3.webp");
+}
+
+.OpenBoxes , .Layers{
+    position: absolute;
+}
+
+#SelectedLevel {
+    border: 2px solid rgb(115, 155, 232);
+    border-radius: 8px;
+    margin: 10px;
+    max-width:250px;
+}
+
+#GenerateButton  {
+    font-family: "VCR OSD MONO";
+    border: none;
+    background-image: url("Fotoğraflar/GenerateButton3.webp");
+    width: 100px;
+    height: 30px;
+    color: rgb(115, 155, 232);
+    background-color: rgba(0,0,0,0);
+    transition: 0.4s ease;
+}
+
+#GenerateButton:hover {
+    color: rgb(145, 185, 255);
+}
+
+h1 {
+    font-size: 3.7em;
+    text-align: center;
+}
+
+#Fail {
+    text-align: center;
+}
+
+#SettingsDiv {
+    position:absolute;
+    right: 30px;
+    top: 10px;
+    transition: 0.4s ease;
+}
+
+#SettingsDiv:hover {
+    cursor: pointer;
+}
+
+#SettingsPage {
+    display: flex;
+    justify-content: space-between ;
+    background-color: rgba(255, 192, 203, 1);
+    visibility: hidden;
+    position: fixed;
+    z-index: 3;
+    inset: 0;
+    margin: auto;
+    border: 2px solid rgb(115, 155, 232);
+    border-radius: 8px;
+    max-width: 50%;
+    max-height: 60%;
+    padding: 10px;
+    gap: 5px;
+}
+
+#SettingsPage span{
+    margin-top: 2px;
+}
+
+#SettingsPage div {
+    border: 2px solid rgb(115, 155, 232);
+    flex-grow: 1;
+}
+
+#SettingsPage h2 {
+    text-align: center;
+}
+
+#Overlay {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: gray;
+    opacity: 0.9;
+    position: fixed;
+    visibility: hidden;
+}
+
+hr {
+    border: 2px solid rgb(115, 155, 232);
+}
+
+@media (max-width: 600px) {
+    #MainThingy {flex-direction: column;}
+    #MiddleDiv , #MiddleLeftDiv{
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h1 img {
+        width: 150px;
+    }
+    img {
+    max-width: 150px;
+    }
+    html,body {
+        overflow-x: hidden;
+    }
+    #SettingsPage {
+        max-width: 90%;
+        max-height: 45%;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    #SettingsDiv {
+        right: 10px;
+    }
+}
+
+#Settings {
+    display: flex;
+    flex-direction: column;
+}
+
+#MusicOptions {
+    display: flex;
+    flex-direction: row;
+}
+
+#ThemeOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+#ThemeOptions span {
+    display: flex;
+    justify-content: space-between;
+}
