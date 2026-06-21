@@ -1,6 +1,18 @@
 let SelectedLevels = []
 let Music = document.getElementById("MusicSound");
 Music.volume = 0.7;
+let Link = document.getElementById("Link")
+if (document.getElementById("Theme1").checked === true) {
+    Link.setAttribute("href","URLS.css")
+}
+else if (document.getElementById("Theme2").checked === true) {
+    Link.setAttribute("href","URLSStyle2.css")
+}
+else if (document.getElementById("Theme3").checked === true) {
+    Link.setAttribute("href","URLSStyle3.css")
+}
+let x = 0
+
 //Prelude
 PreludeLevels = document.getElementsByClassName("PreludeLevel");
 PreludeLayer = document.getElementById("Prelude");
@@ -29,8 +41,19 @@ PreludeLayer.addEventListener("click", (event) => {
 
 let Option1 = document.getElementById("0-1");
 Option1.addEventListener("click", (event) => {
-    if (Option1.checked === true)
+    if (Option1.checked === true) {
         SelectedLevels.push(Option1.value)
+        x = 0
+        for (let i of PreludeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 6){
+                PreludeLayer.checked = true
+            }
+            console.log(x)
+        }
+    }
     else {
         SelectedLevels.splice(SelectedLevels.indexOf(Option1.value),1);
         PreludeLayer.checked = false;
@@ -39,52 +62,102 @@ Option1.addEventListener("click", (event) => {
 })
 let Option2 = document.getElementById("0-2");
 Option2.addEventListener("click", (event) => {
-    if (Option2.checked === true)
+    if (Option2.checked === true) {
         SelectedLevels.push(Option2.value)
-    else
+        x = 0
+        for (let i of PreludeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 6){
+                PreludeLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Option2.value),1)
         PreludeLayer.checked = false;
-    
+    }
 })
 let Option3 = document.getElementById("0-3");
 Option3.addEventListener("click", (event) => {
-    if (Option3.checked === true)
+    if (Option3.checked === true){
         SelectedLevels.push(Option3.value)
-    else
+        x = 0
+        for (let i of PreludeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 6){
+                PreludeLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Option3.value),1)
         PreludeLayer.checked = false;
+    }
     
 })
 
 let Option4 = document.getElementById("0-4");
 Option4.addEventListener("click", (event) => {
-    if (Option4.checked === true)
+    if (Option4.checked === true){
         SelectedLevels.push(Option4.value)
-    else
+        x = 0
+        for (let i of PreludeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 6){
+                PreludeLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Option4.value),1)
         PreludeLayer.checked = false;
-    
+    }
 })
 
 let Option5 = document.getElementById("0-5");
 Option5.addEventListener("click", (event) => {
-    if (Option5.checked === true)
+    if (Option5.checked === true){
         SelectedLevels.push(Option5.value)
-    else
+        x = 0
+        for (let i of PreludeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 6){
+                PreludeLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Option5.value),1)
         PreludeLayer.checked = false;
-    
+    }
 })
 
 let Option0S = document.getElementById("0-S");
 Option0S.addEventListener("click", (event) => {
-    if (Option0S.checked === true) {
+    if (Option0S.checked === true){
         SelectedLevels.push(Option0S.value)
+        x = 0
+        for (let i of PreludeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 6){
+                PreludeLayer.checked = true
+            }
+        }
     }
-    else
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Option0S.value),1)
         PreludeLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("PreludeOpen").addEventListener("click", (event) => {
@@ -109,7 +182,7 @@ document.getElementById("PreludeOpen").addEventListener("click", (event) => {
         i.style.height = "auto";
         };
     document.getElementById("PreludeOpenLabel").textContent = "↑";
-    document.getElementById("PreludeDiv").style.border = "2px solid white"
+     
     }
     else {
         for (let i of document.getElementsByClassName("PreludeLabel")) {
@@ -159,50 +232,97 @@ LimboLayer.addEventListener("click", (event) => {
 
 let Layer1Option1 = document.getElementById("1-1");
 Layer1Option1.addEventListener("click", (event) => {
-    if (Layer1Option1.checked === true)
+        if (Layer1Option1.checked === true){
         SelectedLevels.push(Layer1Option1.value)
-    else
+        x = 0
+        for (let i of LimboLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LimboLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer1Option1.value),1)
         LimboLayer.checked = false;
-    
+    }
 })
 let Layer1Option2 = document.getElementById("1-2");
-Layer1Option2.addEventListener("click", (event) => {
-    if (Layer1Option2.checked === true)
+Layer1Option2.addEventListener("click", (event) => {if (Layer1Option2.checked === true){
         SelectedLevels.push(Layer1Option2.value)
-    else
+        x = 0
+        for (let i of LimboLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LimboLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer1Option2.value),1)
         LimboLayer.checked = false;
-    
+    }
 })
 let Layer1Option3 = document.getElementById("1-3");
-Layer1Option3.addEventListener("click", (event) => {
-    if (Layer1Option3.checked === true)
+Layer1Option3.addEventListener("click", (event) => {if (Layer1Option3.checked === true){
         SelectedLevels.push(Layer1Option3.value)
-    else
+        x = 0
+        for (let i of LimboLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LimboLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer1Option3.value),1)
         LimboLayer.checked = false;
-    
+    } 
 })
 
 let Layer1Option4 = document.getElementById("1-4");
-Layer1Option4.addEventListener("click", (event) => {
-    if (Layer1Option4.checked === true)
+Layer1Option4.addEventListener("click", (event) => {if (Layer1Option4.checked === true){
         SelectedLevels.push(Layer1Option4.value)
-    else
+        x = 0
+        for (let i of LimboLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LimboLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer1Option4.value),1)
         LimboLayer.checked = false;
-    
+    }
 })
 
 let Layer1OptionS = document.getElementById("1-S");
 Layer1OptionS.addEventListener("click", (event) => {
-    if (Layer1OptionS.checked === true)
+    if (Layer1OptionS.checked === true){
         SelectedLevels.push(Layer1OptionS.value)
-    else
+        x = 0
+        for (let i of Levels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                Layer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer1OptionS.value),1)
-        LimboLayer.checked = false;
-    
+        Layer.checked = false;
+    }
 })
 
 document.getElementById("LimboOpen").addEventListener("click", (event) => {
@@ -228,7 +348,6 @@ document.getElementById("LimboOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("LimboOpenLabel").textContent = "↑";
-    document.getElementById("LimboDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("LimboLabel")) {
@@ -279,50 +398,100 @@ LustLayer.addEventListener("click", (event) => {
 
 let Layer2Option1 = document.getElementById("2-1");
 Layer2Option1.addEventListener("click", (event) => {
-    if (Layer2Option1.checked === true)
+    if (Layer2Option1.checked === true){
         SelectedLevels.push(Layer2Option1.value)
-    else
+        x = 0
+        for (let i of LustLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LustLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer2Option1.value),1)
         LustLayer.checked = false;
-    
+    }    
 })
 let Layer2Option2 = document.getElementById("2-2");
 Layer2Option2.addEventListener("click", (event) => {
-    if (Layer2Option2.checked === true)
+if (Layer2Option2.checked === true){
         SelectedLevels.push(Layer2Option2.value)
-    else
+        x = 0
+        for (let i of LustLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LustLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer2Option2.value),1)
         LustLayer.checked = false;
-    
+    }  
 })
 let Layer2Option3 = document.getElementById("2-3");
 Layer2Option3.addEventListener("click", (event) => {
-    if (Layer2Option3.checked === true)
+    if (Layer2Option3.checked === true){
         SelectedLevels.push(Layer2Option3.value)
-    else
+        x = 0
+        for (let i of LustLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LustLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer2Option3.value),1)
         LustLayer.checked = false;
-    
+    }
 })
 
 let Layer2Option4 = document.getElementById("2-4");
 Layer2Option4.addEventListener("click", (event) => {
-    if (Layer2Option4.checked === true)
+    if (Layer2Option4.checked === true){
         SelectedLevels.push(Layer2Option4.value)
-    else
+        x = 0
+        for (let i of LustLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LustLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer2Option4.value),1)
         LustLayer.checked = false;
-    
+    }
 })
 
 let Layer2OptionS = document.getElementById("2-S");
 Layer2OptionS.addEventListener("click", (event) => {
-    if (Layer2OptionS.checked === true)
+    if (Layer2OptionS.checked === true){
         SelectedLevels.push(Layer2OptionS.value)
-    else
+        x = 0
+        for (let i of LustLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                LustLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer2OptionS.value),1)
         LustLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("LustOpen").addEventListener("click", (event) => {
@@ -348,7 +517,6 @@ document.getElementById("LustOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("LustOpenLabel").textContent = "↑";
-    document.getElementById("LustDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("LustLabel")) {
@@ -399,21 +567,41 @@ GluttonyLayer.addEventListener("click", (event) => {
 
 let Layer3Option1 = document.getElementById("3-1");
 Layer3Option1.addEventListener("click", (event) => {
-    if (Layer3Option1.checked === true)
+    if (Layer3Option1.checked === true){
         SelectedLevels.push(Layer3Option1.value)
-    else
+        x = 0
+        for (let i of GluttonyLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                GluttonyLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer3Option1.value),1)
         GluttonyLayer.checked = false;
-    
+    }
 })
 let Layer3Option2 = document.getElementById("3-2");
 Layer3Option2.addEventListener("click", (event) => {
-    if (Layer3Option2.checked === true)
+    if (Layer3Option2.checked === true){
         SelectedLevels.push(Layer3Option2.value)
-    else
+        x = 0
+        for (let i of GluttonyLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                GluttonyLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer3Option2.value),1)
         GluttonyLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("GluttonyOpen").addEventListener("click", (event) => {
@@ -439,7 +627,6 @@ document.getElementById("GluttonyOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("GluttonyOpenLabel").textContent = "↑";
-    document.getElementById("GluttonyDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("GluttonyLabel")) {
@@ -489,50 +676,100 @@ GreedLayer.addEventListener("click", (event) => {
 
 let Layer4Option1 = document.getElementById("4-1");
 Layer4Option1.addEventListener("click", (event) => {
-    if (Layer4Option1.checked === true)
+    if (Layer4Option1.checked === true){
         SelectedLevels.push(Layer4Option1.value)
-    else
+        x = 0
+        for (let i of GreedLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                GreedLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer4Option1.value),1)
         GreedLayer.checked = false;
-    
+    }
 })
 let Layer4Option2 = document.getElementById("4-2");
 Layer4Option2.addEventListener("click", (event) => {
-    if (Layer4Option2.checked === true)
+    if (Layer4Option2.checked === true){
         SelectedLevels.push(Layer4Option2.value)
-    else
+        x = 0
+        for (let i of GreedLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                GreedLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer4Option2.value),1)
         GreedLayer.checked = false;
-    
+    }
 })
 let Layer4Option3 = document.getElementById("4-3");
 Layer4Option3.addEventListener("click", (event) => {
-    if (Layer4Option3.checked === true)
+    if (Layer4Option3.checked === true){
         SelectedLevels.push(Layer4Option3.value)
-    else
+        x = 0
+        for (let i of GreedLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                GreedLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer4Option3.value),1)
         GreedLayer.checked = false;
-    
+    }
 })
 
 let Layer4Option4 = document.getElementById("4-4");
 Layer4Option4.addEventListener("click", (event) => {
-    if (Layer4Option4.checked === true)
+    if (Layer4Option4.checked === true){
         SelectedLevels.push(Layer4Option4.value)
-    else
+        x = 0
+        for (let i of GreedLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                GreedLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer4Option4.value),1)
         GreedLayer.checked = false;
-    
+    }
 })
 
 let Layer4OptionS = document.getElementById("4-S");
 Layer4OptionS.addEventListener("click", (event) => {
-    if (Layer4OptionS.checked === true)
+    if (Layer4OptionS.checked === true){
         SelectedLevels.push(Layer4OptionS.value)
-    else
+        x = 0
+        for (let i of GreedLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                GreedLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer4OptionS.value),1)
         GreedLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("GreedOpen").addEventListener("click", (event) => {
@@ -558,7 +795,6 @@ document.getElementById("GreedOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("GreedOpenLabel").textContent = "↑";
-    document.getElementById("GreedDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("GreedLabel")) {
@@ -608,50 +844,100 @@ WrathLayer.addEventListener("click", (event) => {
 
 let Layer5Option1 = document.getElementById("5-1");
 Layer5Option1.addEventListener("click", (event) => {
-    if (Layer5Option1.checked === true)
+    if (Layer5Option1.checked === true){
         SelectedLevels.push(Layer5Option1.value)
-    else
+        x = 0
+        for (let i of WrathLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                WrathLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer5Option1.value),1)
         WrathLayer.checked = false;
-    
+    }
 })
 let Layer5Option2 = document.getElementById("5-2");
 Layer5Option2.addEventListener("click", (event) => {
-    if (Layer5Option2.checked === true)
+    if (Layer5Option2.checked === true){
         SelectedLevels.push(Layer5Option2.value)
-    else
+        x = 0
+        for (let i of WrathLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                WrathLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer5Option2.value),1)
         WrathLayer.checked = false;
-    
+    }
 })
 let Layer5Option3 = document.getElementById("5-3");
 Layer5Option3.addEventListener("click", (event) => {
-    if (Layer5Option3.checked === true)
+    if (Layer5Option3.checked === true){
         SelectedLevels.push(Layer5Option3.value)
-    else
+        x = 0
+        for (let i of WrathLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                WrathLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer5Option3.value),1)
         WrathLayer.checked = false;
-    
+    }
 })
 
 let Layer5Option4 = document.getElementById("5-4");
 Layer5Option4.addEventListener("click", (event) => {
-    if (Layer5Option4.checked === true)
+    if (Layer5Option4.checked === true){
         SelectedLevels.push(Layer5Option4.value)
-    else
+        x = 0
+        for (let i of WrathLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                WrathLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer5Option4.value),1)
         WrathLayer.checked = false;
-    
+    }
 })
 
 let Layer5OptionS = document.getElementById("5-S");
 Layer5OptionS.addEventListener("click", (event) => {
-    if (Layer5OptionS.checked === true)
+    if (Layer5OptionS.checked === true){
         SelectedLevels.push(Layer5OptionS.value)
-    else
+        x = 0
+        for (let i of WrathLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                WrathLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer5OptionS.value),1)
         WrathLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("WrathOpen").addEventListener("click", (event) => {
@@ -677,7 +963,6 @@ document.getElementById("WrathOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("WrathOpenLabel").textContent = "↑";
-    document.getElementById("WrathDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("WrathLabel")) {
@@ -727,21 +1012,41 @@ HeresyLayer.addEventListener("click", (event) => {
 
 let Layer6Option1 = document.getElementById("6-1");
 Layer6Option1.addEventListener("click", (event) => {
-    if (Layer6Option1.checked === true)
+    if (Layer6Option1.checked === true){
         SelectedLevels.push(Layer6Option1.value)
-    else
+        x = 0
+        for (let i of HeresyLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                HeresyLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer6Option1.value),1)
         HeresyLayer.checked = false;
-    
+    }
 })
 let Layer6Option2 = document.getElementById("6-2");
 Layer6Option2.addEventListener("click", (event) => {
-    if (Layer6Option2.checked === true)
+        if (Layer6Option2.checked === true){
         SelectedLevels.push(Layer6Option2.value)
-    else
+        x = 0
+        for (let i of HeresyLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                HeresyLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer6Option2.value),1)
         HeresyLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("HeresyOpen").addEventListener("click", (event) => {
@@ -767,7 +1072,6 @@ document.getElementById("HeresyOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("HeresyOpenLabel").textContent = "↑";
-    document.getElementById("HeresyDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("HeresyLabel")) {
@@ -817,50 +1121,100 @@ ViolenceLayer.addEventListener("click", (event) => {
 
 let Layer7Option1 = document.getElementById("7-1");
 Layer7Option1.addEventListener("click", (event) => {
-    if (Layer7Option1.checked === true)
+    if (Layer7Option1.checked === true){
         SelectedLevels.push(Layer7Option1.value)
-    else
+        x = 0
+        for (let i of ViolenceLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                ViolenceLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer7Option1.value),1)
         ViolenceLayer.checked = false;
-    
+    }
 })
 let Layer7Option2 = document.getElementById("7-2");
 Layer7Option2.addEventListener("click", (event) => {
-    if (Layer7Option2.checked === true)
+    if (Layer7Option2.checked === true){
         SelectedLevels.push(Layer7Option2.value)
-    else
+        x = 0
+        for (let i of ViolenceLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                ViolenceLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer7Option2.value),1)
         ViolenceLayer.checked = false;
-    
+    }
 })
 let Layer7Option3 = document.getElementById("7-3");
 Layer7Option3.addEventListener("click", (event) => {
-    if (Layer7Option3.checked === true)
+    if (Layer7Option3.checked === true){
         SelectedLevels.push(Layer7Option3.value)
-    else
+        x = 0
+        for (let i of ViolenceLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                ViolenceLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer7Option3.value),1)
         ViolenceLayer.checked = false;
-    
+    }
 })
 
 let Layer7Option4 = document.getElementById("7-4");
 Layer7Option4.addEventListener("click", (event) => {
-    if (Layer7Option4.checked === true)
+    if (Layer7Option4.checked === true){
         SelectedLevels.push(Layer7Option4.value)
-    else
+        x = 0
+        for (let i of ViolenceLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                ViolenceLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer7Option4.value),1)
         ViolenceLayer.checked = false;
-    
+    }
 })
 
 let Layer7OptionS = document.getElementById("7-S");
 Layer7OptionS.addEventListener("click", (event) => {
-    if (Layer7OptionS.checked === true)
+    if (Layer7OptionS.checked === true){
         SelectedLevels.push(Layer7OptionS.value)
-    else
+        x = 0
+        for (let i of ViolenceLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 5) {
+                ViolenceLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer7OptionS.value),1)
         ViolenceLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("ViolenceOpen").addEventListener("click", (event) => {
@@ -886,7 +1240,6 @@ document.getElementById("ViolenceOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("ViolenceOpenLabel").textContent = "↑";
-    document.getElementById("ViolenceDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("ViolenceLabel")) {
@@ -936,40 +1289,80 @@ FraudLayer.addEventListener("click", (event) => {
 
 let Layer8Option1 = document.getElementById("8-1");
 Layer8Option1.addEventListener("click", (event) => {
-    if (Layer8Option1.checked === true)
+    if (Layer8Option1.checked === true){
         SelectedLevels.push(Layer8Option1.value)
-    else
+        x = 0
+        for (let i of FraudLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 4) {
+                FraudLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer8Option1.value),1)
         FraudLayer.checked = false;
-    
+    }
 })
 let Layer8Option2 = document.getElementById("8-2");
 Layer8Option2.addEventListener("click", (event) => {
-    if (Layer8Option2.checked === true)
+    if (Layer8Option2.checked === true){
         SelectedLevels.push(Layer8Option2.value)
-    else
+        x = 0
+        for (let i of FraudLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 4) {
+                FraudLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer8Option2.value),1)
         FraudLayer.checked = false;
-    
+    }
 })
 let Layer8Option3 = document.getElementById("8-3");
 Layer8Option3.addEventListener("click", (event) => {
-    if (Layer8Option3.checked === true)
+    if (Layer8Option3.checked === true){
         SelectedLevels.push(Layer8Option3.value)
-    else
+        x = 0
+        for (let i of FraudLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 4) {
+                FraudLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer8Option3.value),1)
         FraudLayer.checked = false;
-    
+    }
 })
 
 let Layer8Option4 = document.getElementById("8-4");
 Layer8Option4.addEventListener("click", (event) => {
-    if (Layer8Option4.checked === true)
+    if (Layer8Option4.checked === true){
         SelectedLevels.push(Layer8Option4.value)
-    else
+        x = 0
+        for (let i of FraudLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 4) {
+                FraudLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(Layer8Option4.value),1)
         FraudLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("FraudOpen").addEventListener("click", (event) => {
@@ -995,7 +1388,6 @@ document.getElementById("FraudOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("FraudOpenLabel").textContent = "↑";
-    document.getElementById("FraudDiv").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("FraudLabel")) {
@@ -1046,21 +1438,41 @@ PrimeLayer.addEventListener("click", (event) => {
 
 let LayerPOption1 = document.getElementById("P-1");
 LayerPOption1.addEventListener("click", (event) => {
-    if (LayerPOption1.checked === true)
+    if (LayerPOption1.checked === true){
         SelectedLevels.push(LayerPOption1.value)
-    else
+        x = 0
+        for (let i of PrimeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                PrimeLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(LayerPOption1.value),1)
         PrimeLayer.checked = false;
-    
+    }
 })
 let LayerPOption2 = document.getElementById("P-2");
 LayerPOption2.addEventListener("click", (event) => {
-    if (LayerPOption2.checked === true)
+    if (LayerPOption2.checked === true){
         SelectedLevels.push(LayerPOption2.value)
-    else
+        x = 0
+        for (let i of PrimeLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                PrimeLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(LayerPOption2.value),1)
         PrimeLayer.checked = false;
-    
+    }
 })
 
 
@@ -1087,7 +1499,6 @@ document.getElementById("PrimeOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("PrimeOpenLabel").textContent = "↑";
-    document.getElementById("Prime Sanctums").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("PrimeLabel")) {
@@ -1138,21 +1549,41 @@ EncoreLayer.addEventListener("click", (event) => {
 
 let LayerEOption1 = document.getElementById("0-E");
 LayerEOption1.addEventListener("click", (event) => {
-    if (LayerEOption1.checked === true)
+    if (LayerEOption1.checked === true){
         SelectedLevels.push(LayerEOption1.value)
-    else
+        x = 0
+        for (let i of EncoreLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                EncoreLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(LayerEOption1.value),1)
         EncoreLayer.checked = false;
-    
+    }
 })
 let LayerEOption2 = document.getElementById("1-E");
 LayerEOption2.addEventListener("click", (event) => {
-    if (LayerEOption2.checked === true)
+    if (LayerEOption2.checked === true){
         SelectedLevels.push(LayerEOption2.value)
-    else
+        x = 0
+        for (let i of EncoreLevels) {
+            if (i.checked === true) {
+                x++
+            }
+            if (x === 2) {
+                EncoreLayer.checked = true
+            }
+        }
+    }
+    else {
         SelectedLevels.splice(SelectedLevels.indexOf(LayerEOption2.value),1)
         EncoreLayer.checked = false;
-    
+    }
 })
 
 document.getElementById("EncoreOpen").addEventListener("click", (event) => {
@@ -1178,7 +1609,6 @@ document.getElementById("EncoreOpen").addEventListener("click", (event) => {
         i.style.height = "100px";
     }
     document.getElementById("EncoreOpenLabel").textContent = "↑";
-    document.getElementById("Encores").style.border = "2px solid white"
     }
     else {
         for (let i of document.getElementsByClassName("EncoreLabel")) {
@@ -1248,10 +1678,20 @@ document.getElementById("SettingsDiv").addEventListener("click", (event) => {
     }
 })
 
+
 document.getElementById("Overlay").addEventListener("click", (event) => {
     document.getElementById("Overlay").style.visibility = "hidden";
     document.getElementById("SettingsPage").style.visibility = "hidden";
     document.getElementById("HTML").style.overflow = "visible";
+    if (document.getElementById("Theme1").checked === true) {
+    Link.setAttribute("href","URLS.css")
+}
+else if (document.getElementById("Theme2").checked === true) {
+    Link.setAttribute("href","URLSStyle2.css")
+}
+else if (document.getElementById("Theme3").checked === true) {
+    Link.setAttribute("href","URLSStyle3.css")
+}
     if (document.getElementById("SettingsDiv").style.transform === "rotate(360deg)") {
         document.getElementById("SettingsDiv").style.transform = "rotate(720deg)"
     }
