@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ultrakill Random Level Selector by Gülyabani</title>
-        <link rel="stylesheet" href="URLS.css">
+        <link rel="stylesheet" href="URLSStyle2.css" id="Link">
     </head>
     <body id="Body">
         <div id="ActualyMainThingy">
@@ -17,10 +17,26 @@
 
             <div id="SettingsPage">
                 <div id="Settings">
-                    <label for="MusicOption">Music:</label>
-                    <input type="checkbox" id="MusicOption" autocomplete="off">
-                    <label for="MusicOption"><span class="NewCheckbox"></span></label>
-                    <audio src="Sesler/The Fire Is Gone (For Music Box) - Heaven Pierce Her.mp3" id="MusicSound"loop></audio>
+                    <div id="MusicOptions">
+                        <label for="MusicOption">Music:</label>
+                        <input type="checkbox" id="MusicOption" autocomplete="off">
+                        <label for="MusicOption"><span class="NewCheckbox"></span></label>
+                        <audio src="Sesler/The Fire Is Gone (For Music Box) - Heaven Pierce Her.mp3" id="MusicSound"loop></audio>
+                    </div>
+                    <div id="ThemeOptions">
+                        <span>
+                            <label for="Theme1">Black & White</label>
+                            <input type="radio" id="Theme1" name="Theme">
+                        </span>
+                        <span>
+                            <label for="Theme2">White & Black</label>
+                            <input type="radio" id="Theme2" name="Theme">
+                        </span>
+                        <span>
+                            <label for="Theme3">Pink & Blue</label>
+                            <input type="radio" id="Theme3" name="Theme">
+                        </span>
+                    </div>
                 </div>
                 <div>
                     <h2>More About Me</h2>
@@ -29,7 +45,8 @@
                 </div>
             </div>
             <div id="MainThingy">
-                <div id="LeftDiv">
+
+                <div id="TopDiv">
                     <div id="PreludeDiv" class="LayerDiv">
 
                         <div class="MainLabel">
@@ -89,8 +106,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div id="ACT1" class="ACTNAMES">ACT I :Infinite HyperDeath
+                <div id="MiddleDiv">
+                    <div id="MiddleLeftDiv">
+                        <div id="ACT1" class="ACTNAMES">ACT I :Infinite HyperDeath
                         <div id="LimboDiv" class="LayerDiv">
                             <div class="MainLabel">
                                 <input type="checkbox" id="Limbo" name="LimboLayer" value="AllLimboLevels" class="Layers" autocomplete="off">
@@ -425,6 +445,16 @@
                         </div>
                     </div>
 
+                    </div>
+                    <div id="MiddleRightDiv">
+                        <div id="SelectedLevelShowDiv">
+                        <img id="SelectedLevel">
+                        <p id="TipOfTheDay"></p>
+                    </div>
+                    </div>
+                </div>
+
+                <div id="BottomDiv">
                     <div id="Prime Sanctums" class="LayerDiv">
                         <div id="PrimeLayer">
                             <div class="MainLabel">
@@ -482,16 +512,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <button id="GenerateButton">Generate</button>
-                    <p id="Fail"></p>
-                </div>
-                <div id="RightDiv">
-                    <div id="SelectedLevelShowDiv">
-                        <img id="SelectedLevel">
-                        <p id="TipOfTheDay"></p>
-                    </div>
-                </div>
+                <button id="GenerateButton">Generate</button>
+                <p id="Fail"></p>
             </div>
         </div>
         <div id="Overlay">
