@@ -25,6 +25,7 @@ input[type="checkbox"] {
 .LevelList {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     gap:10px;
     margin: 3px;
     justify-content: center;
@@ -55,27 +56,47 @@ input[type="checkbox"] {
     font-family: "VCR OSD MONO";
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border-radius: 8px;
     border: 2px solid white;
     height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px;
     margin: 10px;
+    gap: 30px;
+    
+}
+
+#MainThingy div {
+    border-radius: 8px;
 }
 
 #ActualMainThingy {
     z-index: 1;
 }
 
-#LeftDiv, #RightDiv{
+#MiddleDiv {
+    border: 2px solid white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-basis: 50%;
-    align-items: center;
+    flex-grow: 1;
+}
+
+#MiddleLeftDiv {
+    display: flex;
     gap: 10px;
+}
+
+#MiddleRightDiv {
+    display: flex;
+}
+
+#BottomDiv {
+    display: flex;
+    border: 2px solid white;
+    flex-basis: 50%;
 }
 
 #SelectedLevelShowDiv {
@@ -88,12 +109,16 @@ input[type="checkbox"] {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
 
 .MainLabel , .ACTNAMES {
     text-align: center;
     display: flex;
     flex-direction: column;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 5px;
 }
 
 .LevelLabel {
@@ -111,14 +136,9 @@ body {
 }
 
 
-#ACT1 , #ACT2 , #ACT3{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .LayerDiv {
     border-radius: 8px;
+    margin: 5px;
 }
 
 .NewCheckbox {
@@ -130,12 +150,18 @@ body {
     left: 0;
     height: 20px;
     width: 20px;
-    background: black;
+    background: none;
     border-radius: 4px;
-    border: 1px solid white;
     margin: auto;
 }
 
+input[type="checkbox"] + label > span{
+    margin-top: 2px;
+}
+
+input[type="checkbox"]:not(:checked)+ label > span{
+    background-image: url("Fotoğraflar/Checkbox.webp");
+}
 
 input[type="checkbox"]:checked + label > span{
     background-image: url("Fotoğraflar/CheckboxSelected.webp");
@@ -179,7 +205,7 @@ h1 {
 #SettingsDiv {
     position:absolute;
     right: 30px;
-    margin-top: 10px;
+    top: 10px;
     transition: 0.4s ease;
 }
 
@@ -236,6 +262,9 @@ hr {
 
 @media (max-width: 600px) {
     #MainThingy {flex-direction: column;}
+    #MiddleDiv , #MiddleLeftDiv{
+        flex-direction: column;
+    }
     h1 {
         font-size: 1.5em;
     }
@@ -255,8 +284,27 @@ hr {
     h2 {
         font-size: 1em;
     }
+    #SettingsDiv {
+        right: 10px;
+    }
 }
 
 #Settings {
     display: flex;
+    flex-direction: column;
+}
+
+#MusicOptions {
+    display: flex;
+    flex-direction: row;
+}
+
+#ThemeOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+#ThemeOptions span {
+    display: flex;
+    justify-content: space-between;
 }
